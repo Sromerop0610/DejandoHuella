@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f624b9f2-dff3-422a-9ed8-610f7ae62bbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adoptar.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularios.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/servicios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_adoptar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_adoptar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_donar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_donar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_voluntario.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_voluntario.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,8 @@
     "JavaScript Debug.about.html.executor": "Run",
     "JavaScript Debug.blog.html.executor": "Run",
     "JavaScript Debug.contacto_adoptar.html.executor": "Run",
+    "JavaScript Debug.contacto_donar.html.executor": "Run",
+    "JavaScript Debug.contacto_voluntario.html.executor": "Run",
     "JavaScript Debug.formularios.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.servicios.html.executor": "Run",
@@ -83,7 +83,7 @@
       <workItem from="1761730379132" duration="1000" />
       <workItem from="1761824535276" duration="116000" />
       <workItem from="1761825768584" duration="1828000" />
-      <workItem from="1761897174562" duration="2090000" />
+      <workItem from="1761897174562" duration="2755000" />
     </task>
     <servers />
   </component>
