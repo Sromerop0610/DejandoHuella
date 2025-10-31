@@ -23,3 +23,48 @@
         </ul>
     </nav>
 </header>
+<main>
+    <form name="Donacion" method="POST" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre:
+                <input type="text" name="nombre" placeholder="Nombre *" required>
+            </label>
+            <label>Apellidos:
+                <input type="text" name="apellido" placeholder="Apellido *" required>
+            </label>
+            <label>Correo electrónico:
+                <input type="email" name="correo" placeholder="Correo *" required>
+            </label>
+            <label>Teléfono de contacto:
+                <input type="text" name="telefono" placeholder="Teléfono *" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la donación</legend>
+            <label>Importe a donar (€):
+                <input type="number" name="importe" placeholder="Cantidad *" min="1" required>
+            </label>
+            <label>Tipo de tarjeta:
+                <select name="tipo_tarjeta" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </label>
+            <label>Número de tarjeta:
+                <input type="text" name="numero_tarjeta" placeholder="0000 0000 0000 0000 *" required>
+            </label>
+            <label>Fecha de expiración:
+                <input type="month" name="fecha_expiracion" required>
+            </label>
+            <label>Código CVV:
+                <input type="text" name="cvv" placeholder="123 *" maxlength="4" required>
+            </label>
+        </fieldset>
+
+        <button type="submit">Donar</button>
+    </form>
+</main>
