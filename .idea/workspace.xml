@@ -26,32 +26,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.about.html.executor": "Run",
-    "JavaScript Debug.blog.html.executor": "Run",
-    "JavaScript Debug.contacto_adoptar.html.executor": "Run",
-    "JavaScript Debug.contacto_donar.html.executor": "Run",
-    "JavaScript Debug.contacto_voluntario.html.executor": "Run",
-    "JavaScript Debug.extra.html.executor": "Run",
-    "JavaScript Debug.formularios.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.servicios.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.about.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.blog.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.contacto_adoptar.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.contacto_donar.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.contacto_voluntario.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.extra.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.formularios.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.servicios.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sarit\Documents\lenguaje_marcas\DejandoHuella\assets\images" />
@@ -84,6 +84,7 @@
       <workItem from="1761825768584" duration="1828000" />
       <workItem from="1761897174562" duration="2755000" />
       <workItem from="1761920989495" duration="528000" />
+      <workItem from="1761923264696" duration="3000" />
     </task>
     <servers />
   </component>
