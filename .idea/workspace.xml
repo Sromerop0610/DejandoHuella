@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624b9f2-dff3-422a-9ed8-610f7ae62bbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_adoptar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_adoptar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gato.html" beforeDir="false" afterPath="$PROJECT_DIR$/gato.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/perro.html" beforeDir="false" afterPath="$PROJECT_DIR$/perro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/servicios.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,32 +29,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.about.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.blog.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.contacto_adoptar.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.contacto_donar.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.contacto_voluntario.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.extra.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.formularios.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.servicios.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.about.html.executor": "Run",
+    "JavaScript Debug.blog.html.executor": "Run",
+    "JavaScript Debug.contacto_adoptar.html.executor": "Run",
+    "JavaScript Debug.contacto_donar.html.executor": "Run",
+    "JavaScript Debug.contacto_voluntario.html.executor": "Run",
+    "JavaScript Debug.extra.html.executor": "Run",
+    "JavaScript Debug.formularios.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.perro.html.executor": "Run",
+    "JavaScript Debug.servicios.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "disable.download.node.interpreter.editor.notification": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sarit\Documents\lenguaje_marcas\DejandoHuella\assets\images" />
@@ -83,7 +89,7 @@
       <workItem from="1761897174562" duration="2755000" />
       <workItem from="1761920989495" duration="528000" />
       <workItem from="1761923264696" duration="3000" />
-      <workItem from="1761933115316" duration="654000" />
+      <workItem from="1761933115316" duration="1779000" />
     </task>
     <servers />
   </component>
