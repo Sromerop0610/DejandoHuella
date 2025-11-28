@@ -10,6 +10,11 @@ a{
     text-decoration: none;
     color: var(--color-blanco);
 }
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
 /*
     VARIABLES
 ----------------------- */
@@ -156,4 +161,52 @@ nav{
 
 .imagen_caja{
     width: 280px;
+}
+/*
+   PLAN ACTUACIÓN INDEX
+----------------------- */
+
+.plan_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 50px;
+    padding: 50px;
+}
+
+.plan_grid article {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.plan_grid article img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+}
+
+
+.plan_grid article:hover {
+    transform: scale(1.05);
+}
+
+/*
+   NECESITAMOS INDEX
+----------------------- */
+.necesitamos{
+    text-align: center;
+    padding: 50px 200px;
+}
+.necesitamos img {
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
 }
