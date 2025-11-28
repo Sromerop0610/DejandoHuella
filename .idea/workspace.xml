@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624b9f2-dff3-422a-9ed8-610f7ae62bbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularios.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularios/contacto_adoptar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_adoptar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularios/contacto_donar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_donar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formularios/contacto_voluntario.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_voluntario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gato.html" beforeDir="false" afterPath="$PROJECT_DIR$/gato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,14 @@
       <workItem from="1761933115316" duration="5534000" />
       <workItem from="1762172750286" duration="3094000" />
       <workItem from="1762244270717" duration="107000" />
-      <workItem from="1762513433649" duration="2406000" />
+      <workItem from="1762513433649" duration="2648000" />
+      <workItem from="1762519435723" duration="2724000" />
+      <workItem from="1762775359536" duration="5122000" />
+      <workItem from="1763124060227" duration="2944000" />
+      <workItem from="1763379814409" duration="1808000" />
+      <workItem from="1763462435908" duration="895000" />
+      <workItem from="1764229348654" duration="7909000" />
+      <workItem from="1764316724416" duration="1652000" />
     </task>
     <servers />
   </component>
