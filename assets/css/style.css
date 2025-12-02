@@ -128,10 +128,12 @@ nav{
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     margin: 40px auto;
     width: 90%;
+    flex-wrap: wrap;          /* Permite que los elementos bajen en móviles */
+    gap: 40px;                /* Espacio entre el texto y la imagen */
 }
 
 .contenido_caja {
-    flex: 1 1 350px;
+    flex: 1 1 350px;          /* Mantiene flexibilidad y mínimo ancho */
     text-align: left;
 }
 .titulo_caja {
@@ -141,7 +143,6 @@ nav{
     margin-bottom: 20px;
     line-height: 1.2;
 }
-
 .boton {
     display: inline-block;
     background-color: var(--color-secundario);
@@ -153,16 +154,22 @@ nav{
     color: var(--color-blanco);
     transition: background 0.3s;
 }
-
 .boton:hover {
     background-color: var(--color-blanco);
     color: var(--color-secundario);
     border: 2px dotted var(--color-secundario);
 }
-
-.imagen_caja{
-    width: 280px;
+.contenedor_imagen {
+    flex: 1 1 280px;          /* Ajusta el ancho de la imagen según el contenedor */
+    display: flex;
+    justify-content: center;
 }
+
+.imagen_caja {
+    width: 100%;              /* Para que ocupe todo el ancho del contenedor */
+    max-width: 280px;         /* Máximo ancho de la imagen */
+}
+
 /*
    PLAN ACTUACIÓN INDEX
 ----------------------- */
