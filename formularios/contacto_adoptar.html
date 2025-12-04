@@ -63,23 +63,31 @@
     </fieldset>
     <fieldset>
         <legend>Sobre la adopción:</legend>
-        <label>He tenido mascotas antes
-            <input type = "checkbox" name = "mascotas_antes">
+        <label class="checkbox-label">
+            <input type="checkbox" name="mascotas_antes">
+            He tenido mascotas antes
         </label>
-        <label>Tengo más animales:
-            <input type = "checkbox" name = "mascotas_ahora">
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="mascotas_ahora">
+            Tengo más animales
         </label>
-        <label>Las ventanas de mi casa están protegidas
-            <input type = "checkbox" name = "ventanas_protegidas">
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="ventanas_protegidas">
+            Las ventanas de mi casa están protegidas
         </label>
-        <label>Me comprometo a castrar a mi animal cuando cumpla la edad necesaria
-            <input type = "checkbox" name = "castracion">
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="castracion">
+            Me comprometo a castrar a mi animal cuando cumpla la edad necesaria
         </label>
-        <label>
+
+        <label class="checkbox-label">
             <input type="checkbox" name="condiciones" required>
-            He leído y acepto las
-            <a href="../about.html">condiciones de adopción</a>.
+            He leído y acepto las <a href="../about.html">condiciones de adopción</a>.
         </label>
+
         <label>Tipo de vivienda:
             <select name="vivienda" required>
                 <option value="">-- Selecciona una opción --</option>

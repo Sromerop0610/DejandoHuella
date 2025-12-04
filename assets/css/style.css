@@ -1,6 +1,7 @@
 /*
     RESETEO DE ESTILO
------------------------ */
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -14,8 +15,25 @@ h2 {
     margin-bottom: 10px;
     font-size: 2rem;
     text-align: center;
+    font-family: "Marcellus&display", cursive;
 }
 
+.titulo_seccion::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--color-secundario);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.titulo_seccion{
+    font-size: 2.4rem;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
 body{
     background-color: var(--color-cuaternario);
 }
@@ -29,12 +47,13 @@ body{
     --color-blanco: #ffffff;
     --color-terciario: #fb6000;
     --color-cuaternario: #9fe4dc;
-    --color-quinario: #c9f8f1;
+    --color-oscuro: #333;
+    --color-suave: #e8fdf9
 }
+
 /*
         CABECERA
 ----------------------- */
-
 .cabecera{
     padding: 1rem 2rem;
     display: flex;
@@ -66,6 +85,7 @@ nav{
 .menu__option{
     color: var(--color-blanco);
 }
+
 /*
           PIE
 ----------------------- */
@@ -81,7 +101,6 @@ nav{
     margin: 0;
     padding: 0;
 }
-
 .lista_contacto {
     display: flex;
     flex-direction: column;
@@ -96,17 +115,22 @@ nav{
     margin-bottom: 5px;
 }
 .horario{
-     justify-items: end;
- }
+    justify-items: end;
+}
 .horario p{
     color: var(--color-secundario);
 }
+
+/* ===============================
+       SECCIONES DE INDEX
+=============================== */
 /*
           BANNER
 ----------------------- */
 .main{
     width: 100%;
 }
+
 .banner{
     width: 100%;
     position: relative;
@@ -131,8 +155,9 @@ nav{
     width: 100%;
     color: var(--color-blanco);
 }
+
 /*
-          CAJA INDEX
+          CAJA
 ----------------------- */
 .caja_texto {
     display: flex;
@@ -175,20 +200,19 @@ nav{
     border: 2px dotted var(--color-secundario);
 }
 .contenedor_imagen {
-    flex: 1 1 280px;          /* Ajusta el ancho de la imagen según el contenedor */
+    flex: 1 1 280px;
     display: flex;
     justify-content: center;
 }
 
 .imagen_caja {
-    width: 100%;              /* Para que ocupe todo el ancho del contenedor */
-    max-width: 280px;         /* Máximo ancho de la imagen */
+    width: 100%;
+    max-width: 280px;
 }
 
 /*
    PLAN ACTUACIÓN INDEX
 ----------------------- */
-
 .plan_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -214,7 +238,6 @@ nav{
     margin: 10px 0;
 }
 
-
 .plan_grid article:hover {
     transform: scale(1.05);
 }
@@ -236,6 +259,10 @@ nav{
     width: 400px;
     height: 400px;
 }
+.necesitamos h2{
+    color: var(--color-secundario);
+}
+
 /*
        BLOG INDEX
 ----------------------- */
@@ -277,6 +304,7 @@ nav{
     transform: rotate(2deg);
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
+
 /*
       AYUDAR INDEX
 ----------------------- */
@@ -286,7 +314,252 @@ nav{
     color: var(--color-blanco);
     background: var(--color-primario);
 }
-/*
----------------------------
-/*
+.ayuda h2{
+    color: var(--color-secundario);
+}
+
+/* ===============================
+   SECCIONES DE SERVICIOS
+=============================== */
+
+/* Secciones principales */
+.servicio-section {
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.servicio-section > h2 {
+    font-size: 2.4rem;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.servicio-section p {
+    line-height: 1.7;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: var(--color-oscuro);
+}
+
+/* --- ARTÍCULOS --- */
+.servicio-article {
+    background: var(--color-blanco);
+    border-radius: 15px;
+    padding: 25px 30px;
+    margin: 25px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+}
+
+.servicio-article:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-article h3 {
+    color: var(--color-primario);
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+/* --- IMÁGENES --- */
+.servicio-img {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.servicio-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+/* --- TABLA --- */
+.servicio-table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1.05rem;
+}
+
+.servicio-table caption {
+    font-size: 1.4rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.servicio-table th {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 14px;
+}
+
+.servicio-table td {
+    padding: 14px;
+    background: #ffffff;
+}
+
+.servicio-table tbody tr:nth-child(even) td {
+    background: var(--color-suave);
+}
+
+/* ======================================================
+      NUEVO CSS PARA ADOPCIONES (SOLUCIÓN AL PROBLEMA)
+======================================================= */
+
+/* Contenedor imagen + tarjetas */
+.adopciones-grid {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+/* Imagen ajustada */
+.adopciones-grid .servicio-img {
+    width: 40%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Columna de tarjetas */
+.adopciones-columna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 350px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .adopciones-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adopciones-grid .servicio-img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* ===============================
+   FORMULARIO DE ADOPCIÓN
+=============================== */
+
+/* Contenedor principal */
+form[name="Adopción"] {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+    color: var(--color-oscuro);
+}
+
+/* Fieldset y leyenda */
+form[name="Adopción"] fieldset {
+    border: 2px solid var(--color-primario);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+form[name="Adopción"] legend {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    padding: 0 10px;
+}
+
+/* Etiquetas y inputs */
+form[name="Adopción"] label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+form[name="Adopción"] input[type="text"],
+form[name="Adopción"] input[type="email"],
+form[name="Adopción"] select {
+    padding: 10px 12px;
+    border: 1px solid var(--color-primario);
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+    transition: border 0.3s;
+}
+
+form[name="Adopción"] input[type="text"]:focus,
+form[name="Adopción"] input[type="email"]:focus,
+form[name="Adopción"] select:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+}
+
+/* Checkboxes */
+form[name="Adopción"] input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Checkbox con label horizontal */
+form[name="Adopción"] label input[type="checkbox"] {
+    margin-top: 0;
+}
+
+/* Botón de envío */
+form[name="Adopción"] button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form[name="Adopción"] button[type="submit"]:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-secundario);
+    border: 2px solid var(--color-secundario);
+}
+
+/* Select con estilo uniforme */
+form[name="Adopción"] select {
+    appearance: none;
+    background-color: var(--color-blanco);
+    cursor: pointer;
+}
+
+/* Responsive: adaptar el formulario a pantallas pequeñas */
+@media (max-width: 600px) {
+    form[name="Adopción"] {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+
+    form[name="Adopción"] fieldset {
+        padding: 15px;
+    }
+}
 
