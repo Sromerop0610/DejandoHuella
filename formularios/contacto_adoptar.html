@@ -26,7 +26,7 @@
 </header>
 <main>
 <form name="Adopción" method="POST" action="">
-    <fieldset>
+    <fieldset class="preguntas_personales">
         <legend>Datos personales del adoptante</legend>
         <label>Nombre:
             <input type = "text" name = "nombre" placeholder = "Nombre *" required>
@@ -61,8 +61,9 @@
             <input type="text" name="Codigo_postal" placeholder = "Código postal *" required>
         </label>
     </fieldset>
-    <fieldset>
+    <fieldset class="preguntas_animal">
         <legend>Sobre la adopción:</legend>
+        <div class="div_checkbox_animal">
         <label class="checkbox-label">
             <input type="checkbox" name="mascotas_antes">
             He tenido mascotas antes
@@ -85,9 +86,10 @@
 
         <label class="checkbox-label">
             <input type="checkbox" name="condiciones" required>
-            He leído y acepto las <a href="../about.html">condiciones de adopción</a>.
+            <p>He leído y acepto las </p> <a href="../about.html"> condiciones de adopción</a>.
         </label>
-
+        </div>
+        <div class="div_preguntas_animal">
         <label>Tipo de vivienda:
             <select name="vivienda" required>
                 <option value="">-- Selecciona una opción --</option>
@@ -107,7 +109,7 @@
         <label>Nombre del animal (o animales):
         <input type="text" name="nombre_animal" placeholder = "Nombre del animal *" required>
         </label>
-        <label></label>
+        </div>
     </fieldset>
     <button type="submit">Enviar</button>
 </form>

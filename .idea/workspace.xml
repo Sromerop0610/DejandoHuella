@@ -7,9 +7,8 @@
     <list default="true" id="f624b9f2-dff3-422a-9ed8-610f7ae62bbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/gatos-abandonados.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/gatos-abandonados.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servicios.html" beforeDir="false" afterPath="$PROJECT_DIR$/servicios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_adoptar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_adoptar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/contacto_donar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/contacto_donar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,8 @@
       <workItem from="1764669356811" duration="2387000" />
       <workItem from="1764752819071" duration="3208000" />
       <workItem from="1764757999593" duration="5518000" />
-      <workItem from="1764848776597" duration="1936000" />
+      <workItem from="1764848776597" duration="2974000" />
+      <workItem from="1764938970594" duration="1945000" />
     </task>
     <servers />
   </component>
