@@ -124,9 +124,9 @@ ul.menu{
     background-color: var(--color-primario);
     color: var(--color-blanco);
 }
-.pie_contacto h2{
-    margin: 0;
-    padding: 0;
+.pie h2{
+    color: var(--color-blanco);
+    text-align: left;
 }
 .lista_contacto {
     display: flex;
@@ -289,7 +289,6 @@ ul.menu{
 .necesitamos{
     text-align: center;
     padding: 50px 200px;
-    color: var(--color-blanco);
     background: var(--color-primario);
 }
 .necesitamos img {
@@ -423,27 +422,25 @@ ul.menu{
 /*
        SECCIONES
 -----------------------*/
-.servicio-section {
+.section-general {
     margin: 60px auto;
     width: 90%;
     max-width: 1000px;
 }
 
-.servicio-section > h2 {
-    font-size: 2.4rem;
-    color: var(--color-primario);
-    margin-bottom: 25px;
-    position: relative;
-    text-align: center;
-}
 
-.servicio-section p {
+.section-general p {
     line-height: 1.7;
     font-size: 1.15rem;
     margin-bottom: 12px;
     color: var(--color-oscuro);
 }
-
+.section-oscura p{
+    line-height: 1.7;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: var(--color-blanco);
+}
 
 /*
        ARTÍCULOS
@@ -572,7 +569,7 @@ ul.menu{
     }
 }
 
-/* --------------------------
+/*
    FORMULARIOS: CONTENEDOR
 --------------------------- */
 form {
@@ -586,7 +583,7 @@ form {
     color: var(--color-oscuro);
 }
 
-/* --------------------------
+/*
    FIELDSET Y LEGEND
 --------------------------- */
 form fieldset {
@@ -603,8 +600,8 @@ form legend {
     padding: 0 10px;
 }
 
-/* --------------------------
-   LABELS Y PREGUNTAS VERTICALES
+/*
+ LABELS Y PREGUNTAS VERTICALES
 --------------------------- */
 .preguntas_personales label,
 .div_preguntas_animal label,
@@ -616,7 +613,7 @@ form legend {
     font-size: 1rem;
 }
 
-/* --------------------------
+/*
    CHECKBOXES HORIZONTALES
 --------------------------- */
 .div_checkbox_animal label,
@@ -638,7 +635,7 @@ label input[type="checkbox"] {
     margin-top: 0;
 }
 
-/* --------------------------
+/*
    INPUTS Y SELECTS
 --------------------------- */
 input[type="text"],
@@ -666,7 +663,7 @@ select {
     cursor: pointer;
 }
 
-/* --------------------------
+/*
    BOTÓN DE ENVÍO
 --------------------------- */
 button[type="submit"] {
@@ -689,7 +686,7 @@ button[type="submit"]:hover {
     border: 2px solid var(--color-secundario);
 }
 
-/* --------------------------
+/*
    RESPONSIVE
 --------------------------- */
 @media (max-width: 600px) {
@@ -785,5 +782,82 @@ button[type="submit"]:hover {
     }
     .blog-article-content {
         padding: 15px;
+    }
+}
+/* ===============================
+      FORMULARIOS - ESTILO
+================================ */
+
+.formularios_main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Intro */
+.formularios_intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.formularios_texto {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--color-oscuro);
+}
+
+/* Lista de tarjetas */
+.formularios_lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 40px;
+}
+
+/* Tarjetas individuales */
+.formulario_article {
+    background: var(--color-blanco);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform .3s;
+}
+
+.formulario_article:hover {
+    transform: translateY(-5px);
+}
+
+.titulo2 {
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.form_card_text {
+    font-size: 1.1rem;
+    color: var(--color-oscuro);
+    margin-bottom: 15px;
+}
+
+
+/* Imágenes */
+.imagenes_formulario {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform .3s ease;
+}
+
+.imagenes_formulario:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .formularios_main {
+        width: 95%;
     }
 }
