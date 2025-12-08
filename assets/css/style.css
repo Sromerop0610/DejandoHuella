@@ -1,3 +1,4 @@
+
 /* ===============================
         RESETEO DE ESTILO
 =============================== */
@@ -1336,3 +1337,102 @@ button[type="submit"]:hover {
     }
 }
 
+/* ===============================
+          MODO OSCURO
+=============================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primario: #ffffff;       /* texto y detalles claros */
+        --color-secundario: #ffb47d;     /* acentos cálidos */
+        --color-blanco: #121212;         /* fondo general oscuro */
+        --color-terciario: #ff8e53;      /* botones / hover */
+        --color-cuaternario: #1c1c1c;    /* fondo secundario */
+        --color-oscuro: #e0e0e0;         /* texto principal */
+        --color-suave: #2c2c2c;          /* fondos de secciones secundarias */
+    }
+
+    body {
+        background-color: var(--color-cuaternario);
+        color: var(--color-oscuro);
+    }
+
+    .cabecera {
+        background-color: var(--color-blanco);
+        color: var(--color-primario);
+    }
+
+    .cabecera a {
+        color: var(--color-primario);
+    }
+
+    h1, h2, h3, h4 {
+        color: var(--color-primario);
+    }
+    .pie {
+        background-color: var(--color-blanco);
+        color: var(--color-primario);
+    }
+
+    .pie a {
+        color: var(--color-secundario);
+    }
+    .pie h2{
+        color: var(--color-primario);
+    }
+
+    .ficha-animal__info {
+        background-color: var(--color-suave);
+        color: var(--color-oscuro);
+    }
+
+    .ficha-animal__boton {
+        background: var(--color-terciario);
+        color: var(--color-blanco);
+    }
+
+    .ficha-animal__boton:hover {
+        background: var(--color-blanco);
+        color: var(--color-terciario);
+        border: 2px dotted var(--color-terciario);
+    }
+
+    /* Para listas con iconos */
+    .ficha-animal__lista li::before {
+        color: var(--color-secundario);
+    }
+
+    /* Formularios */
+    form {
+        background-color: var(--color-suave);
+        color: var(--color-oscuro);
+    }
+
+    input, select {
+        background-color: var(--color-blanco);
+        color: var(--color-oscuro);
+        border: 1px solid var(--color-primario);
+    }
+
+    button[type="submit"] {
+        background-color: var(--color-terciario);
+        color: var(--color-blanco);
+    }
+
+    button[type="submit"]:hover {
+        background-color: var(--color-blanco);
+        color: var(--color-terciario);
+        border: 2px solid var(--color-terciario);
+    }
+
+    /* Blog */
+    .textoblog {
+        color: var(--color-oscuro);
+    }
+
+    .blog-article-content {
+        color: var(--color-oscuro);
+    }
+    .sobre-nosotros ul{
+        color: var(--color-primario);
+    }
+}
