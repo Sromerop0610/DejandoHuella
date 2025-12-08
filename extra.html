@@ -24,39 +24,49 @@
     </nav>
 </header>
 <main>
-    <section>
-        <h2>¡Estos pequeños necesitan tu ayuda!</h2>
-        <img src="assets/images/adopta_un_amigo.jpg" alt="Dibujo animales en una caja que pone: adopta un amigo">
+    <section class="lista-animales__intro">
+        <h2 class="titulo_seccion">¡Estos pequeños necesitan tu ayuda!</h2>
+        <img class="lista-animales__img-intro" src="assets/images/adopta_un_amigo.jpg" alt="Dibujo animales en una caja que pone: adopta un amigo">
     </section>
-    <section>
-        <h3>Perros</h3>
-        <article>
-            <img src="assets/images/perrito_sin_pata.jpg" alt="Foto de Leo, perrito al que le falta una pata">
-                <h4>Leo</h4>
-                <p>Sexo: macho</p>
-                <p>Edad: 7 años</p>
+    <section class="lista-animales__grupo">
+        <div class="grupo-header">
+            <h3 class="grupo-header__titulo">Perros</h3>
+        </div>
+    <div class="grupo-contenedor">
+        <article class="animal-article">
+            <img class="animal-article__img" src="assets/images/perrito_sin_pata.jpg" alt="Foto de Leo, perrito al que le falta una pata">
+            <h4 class="animal-article__nombre">Leo</h4>
+            <p class="animal-article__data">Sexo: macho</p>
+            <p class="animal-article__data">Edad: 7 años</p>
         </article>
-        <article>
-            <img src="assets/images/cachorro_para_adoptar.jpg" alt="Foto de la cachorra Luna">
-            <h4>Luna</h4>
-            <p>Sexo: hembra</p>
-            <p>Edad: 5 meses</p>
+        <article class="animal-article">
+            <img class="animal-article__img" src="assets/images/cachorro_para_adoptar.jpg" alt="Foto de la cachorra Luna">
+            <h4 class="animal-article__nombre">Luna</h4>
+            <p class="animal-article__data">Sexo: hembra</p>
+            <p class="animal-article__data">Edad: 5 meses</p>
         </article>
+    </div>
     </section>
-    <section>
-        <h3>Gatos</h3>
-        <article>
-            <a href="gato.html"><img src="assets/images/gato_naranja.jpg" alt="Foto del gato Tom, un gato naranja de pelo corto"></a>
-            <h4>Kiyo</h4>
-            <p>Sexo: macho</p>
-            <p>Edad: 1 año</p>
-        </article>
-        <article>
-            <img src="assets/images/gata_blanca.jpg" alt="Foto de la gata Nala, una gata blanca de ojos verdes">
-            <h4>Nala</h4>
-            <p>Sexo: hembra</p>
-            <p>Edad: 2 años</p>
-        </article>
+    <section class="lista-animales__grupo">
+    <div class="grupo-header">
+        <h3 class="grupo-header__titulo">Gatos</h3>
+    </div>
+        <div class="grupo-contenedor">
+            <article class="animal-article">
+                <a href="gato.html">
+                    <img class="animal-article__img" src="assets/images/gato_naranja.jpg" alt="Foto del gato Kiyo, un gato naranja de pelo corto">
+                </a>
+                <h4 class="animal-article__nombre">Kiyo</h4>
+                <p class="animal-article__data">Sexo: macho</p>
+                <p class="animal-article__data">Edad: 1 año</p>
+            </article>
+            <article class="animal-article">
+                <img class="animal-article__img" src="assets/images/gata_blanca.jpg" alt="Foto de la gata Nala, una gata blanca de ojos verdes">
+                <h4 class="animal-article__nombre">Nala</h4>
+                <p class="animal-article__data">Sexo: hembra</p>
+                <p class="animal-article__data">Edad: 2 años</p>
+            </article>
+        </div>
     </section>
 </main>
 <footer class="pie">
