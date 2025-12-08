@@ -25,88 +25,124 @@
     </nav>
 </header>
 <main>
-<form name="Acogida" method="POST" action="">
-    <fieldset>
-        <legend>Datos personales del voluntario</legend>
-        <label>Nombre:
-            <input type="text" name="nombre" placeholder="Nombre *" required>
-        </label>
-        <label>Apellidos:
-            <input type="text" name="apellido" placeholder="Apellido *" required>
-        </label>
-        <label>Correo electrónico:
-            <input type="email" name="correo" placeholder="Correo *" required>
-        </label>
-        <label>Teléfono de contacto:
-            <input type="text" name="telefono" placeholder="Teléfono *" required>
-        </label>
-        <label>Localidad:
-            <select name="Localidad" required>
-                <option value="">-- Selecciona una opción --</option>
-                <option value="Cádiz">Cádiz</option>
-                <option value="Sevilla">Sevilla</option>
-                <option value="Jaen">Jaen</option>
-                <option value="Malaga">Málaga</option>
-                <option value="Huelva">Huelva</option>
-                <option value="Almeria">Almería</option>
-                <option value="Granada">Granada</option>
-                <option value="Cordoba">Córdoba</option>
-            </select>
-        </label>
-        <label>Dirección:
-            <input type="text" name="direccion" placeholder="Dirección *" required>
-        </label>
-        <label>Código postal:
-            <input type="text" name="Codigo_postal" placeholder="Código postal *" required>
-        </label>
-    </fieldset>
+    <form name="Voluntariado" method="POST" action="">
 
-    <fieldset>
-        <legend>Sobre la acogida:</legend>
-        <label>He tenido mascotas antes:
-            <input type="checkbox" name="mascotas_antes">
-        </label>
-        <label>Tengo más animales actualmente:
-            <input type="checkbox" name="mascotas_ahora">
-        </label>
-        <label>Las ventanas de mi casa están protegidas:
-            <input type="checkbox" name="ventanas_protegidas">
-        </label>
-        <label>Me comprometo a castrar a los animales acogidos si corresponde:
-            <input type="checkbox" name="castracion">
-        </label>
-        <label>
-            <input type="checkbox" name="condiciones" required>
-            He leído y acepto las
-            <a href="../about.html">condiciones de acogida</a>.
-        </label>
-        <label>Tipo de vivienda:
-            <select name="vivienda" required>
-                <option value="">-- Selecciona una opción --</option>
-                <option value="piso">Piso</option>
-                <option value="casa_con_jardin">Casa con jardín</option>
-                <option value="otros">Otros</option>
-            </select>
-        </label>
-        <label>Número de animales que puedes acoger:
-            <input type="number" name="num_animales" min="1" placeholder="Cantidad *" required>
-        </label>
-        <label>Tiempo disponible para la acogida (días, semanas o meses):
-            <input type="text" name="duracion" placeholder="Ej: 2 semanas" required>
-        </label>
-        <label>Preferencia de animal:
-            <select name="Animal" required>
-                <option value="">-- Selecciona una opción --</option>
-                <option value="Perro">Perro</option>
-                <option value="Gato">Gato</option>
-                <option value="Indiferente">Indiferente</option>
-            </select>
-        </label>
-    </fieldset>
+        <!-- DATOS PERSONALES -->
+        <fieldset class="preguntas_personales">
+            <legend>Datos personales del voluntario</legend>
 
-    <button type="submit">Enviar</button>
+            <label>Nombre:
+                <input type="text" name="nombre" placeholder="Nombre *" required>
+            </label>
+
+            <label>Apellidos:
+                <input type="text" name="apellido" placeholder="Apellido *" required>
+            </label>
+
+            <label>Correo electrónico:
+                <input type="email" name="correo" placeholder="Correo *" required>
+            </label>
+
+            <label>Teléfono de contacto:
+                <input type="text" name="telefono" placeholder="Teléfono *" required>
+            </label>
+
+            <label>Localidad:
+                <select name="Localidad" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="Cádiz">Cádiz</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Jaen">Jaen</option>
+                    <option value="Malaga">Málaga</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Almeria">Almería</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Cordoba">Córdoba</option>
+                </select>
+            </label>
+
+            <label>Dirección:
+                <input type="text" name="direccion" placeholder="Dirección *" required>
+            </label>
+
+            <label>Código postal:
+                <input type="text" name="Codigo_postal" placeholder="Código postal *" required>
+            </label>
+        </fieldset>
+
+
+        <!-- VOLUNTARIADO -->
+        <fieldset class="div_preguntas_acogida">
+            <legend>Voluntariado en el refugio</legend>
+
+            <!-- BLOQUE DE CHECKBOXES -->
+            <div class="div_checkbox_acogida">
+
+                <label>
+                    <input type="checkbox" name="experiencia_animales">
+                    Tengo experiencia previa con animales
+                </label>
+
+                <label>
+                    <input type="checkbox" name="disponibilidad_fines">
+                    Estoy disponible fines de semana
+                </label>
+
+                <label>
+                    <input type="checkbox" name="disponibilidad_manana">
+                    Estoy disponible por las mañanas
+                </label>
+
+                <label>
+                    <input type="checkbox" name="disponibilidad_tarde">
+                    Estoy disponible por las tardes
+                </label>
+
+                <label>
+                    <input type="checkbox" name="acepto_normas" required>
+                    Acepto las <a href="../about.html">normas del voluntariado</a>.
+                </label>
+
+            </div>
+
+            <!-- BLOQUE DE PREGUNTAS -->
+            <div class="div_preguntas_acogida">
+
+                <label>Área en la que deseas ayudar:
+                    <select name="area_voluntariado" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="paseo_perros">Paseo de perros</option>
+                        <option value="cuidado_gatos">Cuidado de gatos</option>
+                        <option value="limpieza">Limpieza y mantenimiento</option>
+                        <option value="eventos">Participación en eventos</option>
+                        <option value="redes_sociales">Gestión de redes sociales</option>
+                    </select>
+                </label>
+
+                <label>Horas a la semana que puedes dedicar:
+                    <input type="number" name="horas_semana" min="1" placeholder="Ej: 5" required>
+                </label>
+
+                <label>Motivación para ser voluntario:
+                    <input type="text" name="motivacion" placeholder="Cuéntanos brevemente" required>
+                </label>
+
+                <label>¿Preferencia de animales?
+                    <select name="preferencia_animal" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="Perros">Perros</option>
+                        <option value="Gatos">Gatos</option>
+                        <option value="Indiferente">Indiferente</option>
+                    </select>
+                </label>
+
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
     </form>
-    </main>
+</main>
 <footer class="pie">
     <section class="pie_contacto">
         <h2>Encuéntranos</h2>
