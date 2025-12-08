@@ -19,7 +19,18 @@ h2 {
     font-family: "Marcellus&display", cursive;
     color: var(--color-primario)
 }
-
+body h1{
+    font-family: "Marcellus&display", cursive;
+}
+body h3{
+    font-family: "Marcellus&display", cursive;
+}
+body h4{
+    font-family: "Marcellus&display", cursive;
+}
+body p{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .titulo_seccion::after{
     content: "";
     display: block;
@@ -50,7 +61,8 @@ body{
     --color-terciario: #fb6000;
     --color-cuaternario: #9fe4dc;
     --color-oscuro: #333;
-    --color-suave: #e8fdf9
+    --color-suave: #e8fdf9;
+    --color-negro: #000000;
 }
 
 /* =========================
@@ -527,7 +539,9 @@ ul.menu{
     padding: 14px;
     background: #ffffff;
 }
-
+.fila_distinta{
+    color: var(--color-negro);
+}
 .servicio-table tbody tr:nth-child(even) td {
     background: var(--color-suave);
 }
