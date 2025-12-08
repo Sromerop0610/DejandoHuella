@@ -24,6 +24,10 @@
     </nav>
 </header>
 <main>
+    <section class="lista-animales__buscador">
+        <label for="busqueda">Busca un animal:</label>
+        <input type="text" id="busqueda" placeholder="Escribe el nombre...">
+    </section>
     <section class="lista-animales__intro">
         <h2 class="titulo_seccion">¡Estos pequeños necesitan tu ayuda!</h2>
         <img class="lista-animales__img-intro" src="assets/images/adopta_un_amigo.jpg" alt="Dibujo animales en una caja que pone: adopta un amigo">
@@ -34,13 +38,20 @@
         </div>
     <div class="grupo-contenedor">
         <article class="animal-article">
-            <img class="animal-article__img" src="assets/images/perrito_sin_pata.jpg" alt="Foto de Leo, perrito al que le falta una pata">
+            <figure>
+                <img class="animal-article__img" src="assets/images/perrito_sin_pata.jpg" alt="Foto de Leo, perrito al que le falta una pata">
+                <figcaption>Leo, el perro más cariñoso</figcaption>
+            </figure>
+
             <h4 class="animal-article__nombre">Leo</h4>
             <p class="animal-article__data">Sexo: macho</p>
             <p class="animal-article__data">Edad: 7 años</p>
         </article>
         <article class="animal-article">
-            <img class="animal-article__img" src="assets/images/cachorro_para_adoptar.jpg" alt="Foto de la cachorra Luna">
+            <figure>
+                <img class="animal-article__img" src="assets/images/cachorro_para_adoptar.jpg" alt="Foto de la cachorra Luna">
+                <figcaption>Luna, nuestra border collie</figcaption>
+            </figure>
             <h4 class="animal-article__nombre">Luna</h4>
             <p class="animal-article__data">Sexo: hembra</p>
             <p class="animal-article__data">Edad: 5 meses</p>
@@ -54,14 +65,20 @@
         <div class="grupo-contenedor">
             <article class="animal-article">
                 <a href="gato.html">
-                    <img class="animal-article__img" src="assets/images/gato_naranja.jpg" alt="Foto del gato Kiyo, un gato naranja de pelo corto">
+                    <figure>
+                        <img class="animal-article__img" src="assets/images/gato_naranja.jpg" alt="Foto del gato Kiyo, un gato naranja de pelo corto">
+                        <figcaption>Kiyo, nuestro gato naranja.</figcaption>
+                    </figure>
                 </a>
                 <h4 class="animal-article__nombre">Kiyo</h4>
                 <p class="animal-article__data">Sexo: macho</p>
                 <p class="animal-article__data">Edad: 1 año</p>
             </article>
             <article class="animal-article">
-                <img class="animal-article__img" src="assets/images/gata_blanca.jpg" alt="Foto de la gata Nala, una gata blanca de ojos verdes">
+                <figure>
+                    <img class="animal-article__img" src="assets/images/gata_blanca.jpg" alt="Foto de la gata Nala, una gata blanca de ojos verdes">
+                    <figcaption>Nala, nuestra gata tricolor</figcaption>
+                </figure>
                 <h4 class="animal-article__nombre">Nala</h4>
                 <p class="animal-article__data">Sexo: hembra</p>
                 <p class="animal-article__data">Edad: 2 años</p>

@@ -887,8 +887,37 @@ button[type="submit"]:hover {
     }
 }
 /* =======================================
-   LISTA DE ANIMALES - DISEÑO ELABORADO
+           LISTA DE ANIMALES
 ========================================= */
+.lista-animales__buscador {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.lista-animales__buscador label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.lista-animales__buscador input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid var(--color-primario);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.lista-animales__buscador input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 8px rgba(255, 142, 83, 0.4);
+}
 
 /*
            INTRO

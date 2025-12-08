@@ -14,7 +14,21 @@ Voy a estructurar la documentación de la siguiente forma: una a una voy a ir ha
 1. Estructura del sitio
 2. Decisiones de diseño
 
-Aunque, primero voy a enumerar los elementos comunes, como son el footer, el header:
+Primero voy a enumerar los elementos comunes, como son el footer, el header. Aunque, lo primero va a ser una explicación sobre la parte general del css:
+---
+
+#### Reseteo de estilo y variables (`reset` y `:root`)
+
+Esta sección del CSS establece la **base global de estilos** de todo el sitio web. Incluye un reseteo de márgenes y padding, definición de tipografías, estilos generales para enlaces y títulos, así como la declaración de **variables CSS** para los colores principales, secundarios y de fondo. Su objetivo es garantizar **uniformidad visual**, facilitar el mantenimiento y asegurar que todos los elementos del sitio compartan una coherencia de diseño.
+
+Se define un `@import` para la fuente principal "Marcellus", se eliminan márgenes y padding por defecto con `*`, y se establece `box-sizing: border-box` para que el dimensionado de los elementos sea consistente. Los enlaces `<a>` se estilizan para no mostrar subrayado y usar el color secundario definido en las variables. Se aplica una tipografía específica a los encabezados (`h1`, `h2`, `h3`, `h4`) y a los párrafos `<p>` para garantizar legibilidad y uniformidad.
+
+La clase `.titulo_seccion` añade un estilo destacado a los títulos de cada sección, incluyendo un **subrayado decorativo** mediante `::after`, centrado y con color secundario. El `body` recibe un color de fondo definido por la variable `--color-cuaternario`, asegurando un aspecto suave y agradable.
+
+Las **variables CSS declaradas en `:root`** permiten centralizar los colores del proyecto (`--color-primario`, `--color-secundario`, `--color-blanco`, etc.), facilitando cambios globales y asegurando que los estilos sean coherentes en todas las páginas.
+
+> Esta sección actúa como la **base de todo el diseño**, garantizando consistencia de colores, tipografías y espaciados, y preparando el sitio para aplicar estilos más específicos en encabezado, secciones y pie de página.
+
 #### Encabezado (`<header>`)
 
 Contiene los elementos de **identidad y navegación global** del sitio:
@@ -32,7 +46,9 @@ Contiene los elementos de **identidad y navegación global** del sitio:
 El uso de `<h1>` se debe a darle la mayor importancia posible a el Título, y que a la hora de la accesibilidad, el lector de página lo detecte como texto importante. EL uso del `<nav>`se debe a la necesidad de crear un menú de navegación, que a su vez contiene elementos con la etiqueta `<ul>` que indica que la lista no es ordenada. Cada elemento de la lista tiene una etiqueta `<a>`para que funcione como enlace al resto de páginas.
 > Este encabezado sirve como **barra de navegación fija y coherente** en todas las páginas del sitio.
 
+Respecto al CSS, esta sección se estiliza para que sea **flexible, ordenada y visualmente destacada**. La cabecera utiliza `display: flex` para distribuir el logo, el título y el menú, con `justify-content: space-between` y `align-items: center` para mantenerlos alineados y espaciados. Se aplican colores definidos por las variables (`--color-primario` para el fondo y `--color-secundario` para elementos decorativos, `--color-blanco` para los enlaces) y se gestiona la **adaptabilidad a pantallas pequeñas** mediante un `@media` que cambia la orientación de los elementos a columna y ajusta el menú para que sea más legible en dispositivos móviles.
 
+> Este CSS asegura que la cabecera sea **coherente, accesible y responsive**, manteniendo siempre la identidad visual del sitio.
 ---
 
 
@@ -54,6 +70,10 @@ Contiene la **información de contacto y atención al público** del refugio. Es
 El uso del `<footer>` se debe a que representa el bloque final del documento, reservado para información complementaria o de contacto. Dentro de él se emplean etiquetas `<section>` para dividir el contenido en bloques temáticos: uno para la información de contacto y otro para los horarios. Los títulos de cada bloque se marcan con `<h2>` para mantener la jerarquía semántica correcta. Los enlaces `<a>` se utilizan para permitir la interacción directa con el usuario: uno con `tel:` para realizar llamadas desde dispositivos móviles, otro con `mailto:` para enviar correos electrónicos, y otro con una URL hacia Google Maps para mostrar la ubicación del refugio. El texto descriptivo del horario se agrupa dentro de un párrafo `<p>`, mientras que las horas y los días se marcan con la etiqueta `<time>`, que añade valor semántico al indicar información temporal, facilitando su lectura por navegadores y herramientas de accesibilidad.
 
 > Este pie de página ofrece al usuario una **forma directa de contacto y referencia horaria**, funcionando como elemento de cierre informativo en la página.
+
+Respecto al CSS, esta sección se estiliza para que sea **coherente y visualmente destacada**, utilizando `display: flex` para alinear horizontalmente las dos secciones y `justify-content: space-between` para distribuirlas de manera uniforme. Se aplican colores consistentes con la identidad del sitio (`--color-primario` para el fondo y `--color-blanco` para los textos, con `--color-secundario` en enlaces y horarios). Las listas de contacto se presentan en columna con espacio entre elementos (`gap: 5px`) y sin viñetas (`list-style: none`). Esto asegura que la información sea **clara, accesible y visualmente ordenada**, manteniendo la estética del sitio y la facilidad de lectura.
+
+> Este CSS permite que el footer sea un **elemento de cierre sólido, legible y armonioso**, reforzando la identidad visual y ofreciendo al usuario acceso directo a la información de contacto y horarios.
 
 ---
 
