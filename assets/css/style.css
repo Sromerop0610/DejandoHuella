@@ -16,6 +16,7 @@ h2 {
     font-size: 2rem;
     text-align: center;
     font-family: "Marcellus&display", cursive;
+    color: var(--color-primario)
 }
 
 .titulo_seccion::after{
@@ -309,10 +310,6 @@ ul.menu{
 .blog{
     padding: 1rem 2rem;
     text-align: center;
-}
-.blog h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
 }
 
 .textoblog {
@@ -705,6 +702,88 @@ button[type="submit"]:hover {
     }
 }
 
-/* --------------------------
-      SOBRE NOSOTROS
---------------------------- */
+/* ===============================
+      BLOG - ESTILO ESPECÍFICO
+=============================== */
+
+.blog h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--color-secundario);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.blog h3{
+    color: var(--color-primario);
+}
+.blog-article {
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+.blog-article-content {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+
+.blog-article img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--color-secundario);
+    border-radius: 12px 12px 0 0;
+}
+
+
+.blog-date {
+    display: block;
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+
+.blog-article h4 {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+
+.blog-noticias {
+    background-color: var(--color-suave);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 2rem auto 0;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .blog-article {
+        flex-direction: column;
+    }
+    .blog-article img {
+        max-width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+    .blog-article-content {
+        padding: 15px;
+    }
+}
