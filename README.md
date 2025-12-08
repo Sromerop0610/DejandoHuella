@@ -99,6 +99,15 @@ Esta parte contiene **el cuerpo central de la página de inicio**, donde se pres
 El uso del `<main>` se debe a que representa el contenido principal de la página, aquel que es único y central respecto al resto del sitio. Dentro de él, las etiquetas `<section>` dividen la información en bloques temáticos claramente definidos, mejorando la lectura y la organización del contenido. Los títulos `<h2>` y `<h3>` se utilizan para jerarquizar la información, permitiendo a los lectores y herramientas de accesibilidad identificar rápidamente los apartados y subapartados. Las etiquetas `<p>` sirven para incluir el texto descriptivo de cada tema, garantizando una presentación limpia y comprensible. Las imágenes `<img>` refuerzan visualmente los mensajes, mostrando tanto instalaciones como iconos representativos de las actividades del refugio; el atributo `alt` asegura la accesibilidad para personas con lectores de pantalla. Por último, los enlaces `<a>` se emplean como llamadas a la acción, conectando al usuario con las diferentes secciones internas del sitio web, como “Adopta una huella”, “Sobre nosotros”, “Blog” y “Servicios”, facilitando una navegación intuitiva y coherente.
 
 > Este bloque `<main>` constituye el núcleo informativo de la página de inicio, donde se muestra de forma clara la misión, actividades y oportunidades de participación que ofrece el refugio.
+
+Respecto al CSS, las secciones del `<main>` se estilizan para **dar protagonismo a cada bloque de contenido y mantener coherencia visual**. Se utiliza `flex` y `grid` para organizar los elementos dentro de cada sección: el banner centra títulos e imágenes con `flex` y posicionamiento relativo, las cajas de texto (`.caja_texto`) combinan imagen y contenido en columnas flexibles, y el plan de actuación se distribuye en un `grid` adaptable.
+
+Se aplican **colores, tipografía y sombras** consistentes con la identidad del refugio: fondos claros para las cajas, texto principal con `--color-primario` y botones llamativos con `--color-secundario`. Las imágenes cuentan con `object-fit: cover` y bordes redondeados para mantener armonía visual. Además, se incluyen **transiciones y efectos hover** en botones e imágenes para mejorar la interacción sin sobrecargar la página.
+
+El diseño también es **responsivo**, con media queries que ajustan el tamaño y la disposición de las cajas, imágenes y textos según el ancho de pantalla, asegurando que el contenido sea legible y accesible tanto en dispositivos grandes como en móviles.
+
+> Gracias a este CSS, cada sección del `<main>` resulta visualmente atractiva, clara y fácil de navegar, reforzando la misión y los mensajes del refugio de manera coherente y accesible.
+
 ---
 #### 2. Servicios.html
 
@@ -129,6 +138,14 @@ Esta página presenta los **servicios que ofrece el refugio Dejando Huella**, co
 El uso del `<main>` se debe a que contiene el contenido principal y único de la página, centrado en los servicios ofrecidos. Dentro de él, las etiquetas `<section>` dividen la información en bloques temáticos (servicios, adopciones, visitas, rescates y prácticas), lo que mejora la estructura semántica y facilita la navegación. Los títulos `<h2>` sirven para identificar las secciones principales, mientras que los `<h3>` dentro de los artículos establecen subniveles jerárquicos para cada tipo de servicio. Las etiquetas `<p>` agrupan los textos descriptivos que explican cada actividad, manteniendo un formato legible y coherente. Las imágenes `<img>` apoyan visualmente cada tema y, mediante el atributo `alt`, garantizan la accesibilidad para usuarios con lectores de pantalla. Los enlaces `<a>` permiten al usuario acceder a información adicional, contactar por correo o teléfono, y navegar entre páginas relacionadas. La etiqueta `<article>` se emplea para dividir contenidos independientes dentro de una misma sección, como los distintos tipos de adopciones. Por último, la tabla `<table>` se utiliza para comparar de forma clara las diferencias entre adoptar y acoger, usando elementos como `<caption>`, `<thead>`, `<tbody>`, `<tr>`, `<th>` y `<td>` que estructuran correctamente la información en filas y columnas, aportando una lectura más ordenada y profesional.
 
 > Este `<main>` organiza todos los servicios del refugio de manera clara y accesible, destacando las diferentes formas en que la comunidad puede involucrarse con la causa animal.
+
+Respecto al CSS, las secciones de `<main>` se diseñan para **resaltar cada servicio y facilitar la lectura visual del contenido**. Las secciones generales (`.section-general`) centran y delimitan los bloques de texto con márgenes y ancho máximo, mientras que los párrafos tienen line-height y tamaño de fuente consistentes para mejorar la legibilidad.
+
+Cada artículo de servicio (`.servicio-article`) está destacado con **fondos claros, bordes redondeados y sombras suaves**, y se aplica un efecto hover que eleva ligeramente el artículo, dando sensación de interactividad y dinamismo. Las imágenes (`.servicio-img`) están centradas, con bordes redondeados y sombras, y cuentan con transiciones suaves al pasar el cursor, reforzando la presentación visual sin sobrecargar la página.
+
+En la sección de visitas y excursiones, se utiliza `flex` (`.servicio-contenido`) para **alinear texto e imagen** y adaptarse a distintos tamaños de pantalla gracias a `flex-wrap`. La tabla comparativa (`.servicio-table`) está diseñada con **bordes colapsados, filas alternas con color suave y encabezados destacados**, lo que permite al usuario distinguir fácilmente la información entre adoptar y acoger.
+
+> En conjunto, este CSS asegura que cada servicio sea **visual y conceptualmente claro**, promoviendo la comprensión de las actividades del refugio y mejorando la experiencia del usuario en la página.
 ---
 
 #### 3. About.html
@@ -152,6 +169,20 @@ Esta parte contiene el **núcleo informativo de la página de inicio**, donde se
 El uso del `<main>` se debe a que contiene el contenido principal y único de la página, diferenciándolo del encabezado o el pie. Las etiquetas `<section>` estructuran la información en bloques temáticos independientes, lo que facilita la lectura y la comprensión del contenido tanto para los usuarios como para los motores de búsqueda. Los títulos `<h2>` se utilizan para marcar las secciones principales y los `<h3>` para establecer subtítulos o lemas relacionados, siguiendo una jerarquía semántica adecuada. Las etiquetas `<p>` permiten presentar el texto descriptivo de manera ordenada, mientras que las imágenes `<img>` refuerzan visualmente la información, aportando contexto y atractivo visual; además, el atributo `alt` mejora la accesibilidad para personas con discapacidad visual. Por último, las etiquetas `<a>` se usan para enlazar con otras páginas del sitio, fomentando la navegación interna y facilitando al usuario el acceso a contenidos relacionados como la adopción, información institucional o servicios ofrecidos.
 
 > Este bloque `<main>` organiza de forma clara y visual toda la información esencial del refugio, ayudando al visitante a conocer su labor, cómo participar y cómo acceder al resto de secciones del sitio.
+
+El CSS de `About.html` se centra en **presentar de manera visual y organizada la información institucional del refugio**.
+
+El **banner principal** (`.banner-sobre`) ocupa todo el ancho de la página, con fondo de color secundario, texto centrado y bordes inferiores redondeados. Los títulos (`.titulo-banner-sobre` y `.subtitulo-banner-sobre`) destacan jerárquicamente el nombre y lema del refugio, usando tamaños grandes y contraste de color para atraer la atención del visitante.
+
+Las **cajas informativas** (`.caja-sobre` e `.impacto-sobre`) utilizan fondo blanco, bordes redondeados y sombras suaves, creando bloques visualmente separados del fondo. Los títulos de cada caja (`.titulo-caja-sobre`) usan colores primarios y posición relativa para resaltar jerárquicamente el contenido. Las listas dentro de estas cajas (`ul li`) incorporan iconos de huella antes de cada elemento y efectos hover que cambian el color y añaden un pequeño movimiento, aportando dinamismo y reforzando la identidad del refugio.
+
+La **historia del refugio** se organiza en un grid de cuatro columnas (`.historia-grid`) que se ajusta a distintos tamaños de pantalla, con cada artículo (`.historia-articulo`) con fondo blanco, bordes redondeados, sombra y efectos hover que levantan ligeramente el bloque, resaltando su interactividad. Cada artículo incluye títulos y imágenes con estilo consistente y sombras, aportando profundidad y atractivo visual.
+
+Las **políticas y normativas** se presentan en un grid flexible (`.politicas-grid`) que se adapta automáticamente a pantallas pequeñas, manteniendo legibilidad. Cada artículo (`.politica-articulo`) sigue la misma estética de bloques con sombra y bordes redondeados, reforzando la coherencia visual del sitio.
+
+Finalmente, el **responsive** asegura que en pantallas pequeñas se reduzcan los tamaños de fuente de títulos y subtítulos y se ajusten los paddings de cajas y artículos, garantizando una lectura cómoda y una experiencia de usuario óptima en dispositivos móviles.
+
+> En conjunto, este CSS logra que la página About sea clara, visual y accesible, resaltando la identidad y misión del refugio, con bloques diferenciados, elementos interactivos y un diseño adaptativo que facilita la navegación y comprensión del contenido.
 ---
 
 #### 4. Extra.html
@@ -179,9 +210,18 @@ Esta parte contiene el **bloque central de la página dedicada a las adopciones*
 El uso del `<main>` se debe a que contiene el contenido principal y más relevante de la página, en este caso, los animales que buscan adopción. Las etiquetas `<section>` organizan el contenido en bloques temáticos diferenciados: una introducción general, una sección para perros y otra para gatos. Los encabezados `<h2>`, `<h3>` y `<h4>` establecen una jerarquía clara: el título principal, los títulos de categoría (perros y gatos) y los nombres individuales de cada animal. Los elementos `<article>` agrupan la información de cada animal como unidades independientes dentro de su categoría, lo que mejora la estructura semántica y facilita la lectura por parte de buscadores o herramientas de accesibilidad. Las etiquetas `<p>` se utilizan para presentar los datos específicos de cada animal (sexo y edad), de forma sencilla y legible. Las imágenes `<img>` aportan información visual fundamental, mostrando el aspecto de cada animal, y los atributos `alt` describen las fotografías, mejorando la accesibilidad. Finalmente, los enlaces `<a>` permiten acceder a páginas individuales con más información sobre cada animal, favoreciendo la navegación y la interacción del usuario con el contenido.
 
 > Este bloque `<main>` cumple la función de mostrar de manera visual, organizada y accesible los animales en adopción, facilitando al visitante conocerlos y acceder a más detalles sobre cada uno.
+
+Respecto al CSS, las secciones de adopciones se diseñan para **mostrar los animales de manera visualmente atractiva y organizada**, facilitando al usuario la búsqueda y consulta de cada uno. El bloque de introducción (`.lista-animales__intro`) centra el contenido y combina un título destacado con una imagen ilustrativa, aplicando sombras suaves y un efecto hover que da dinamismo.
+
+El buscador de animales (`.lista-animales__buscador`) se presenta de forma clara y accesible, con inputs estilizados que cambian de borde y sombra al enfocarse, mejorando la interacción del usuario. Los encabezados de grupos de animales (`.grupo-header`) se destacan con fondo de color primario, texto blanco y bordes redondeados, reforzando la jerarquía visual de cada categoría.
+
+Los contenedores de tarjetas (`.grupo-contenedor`) usan **grid responsivo** para adaptar automáticamente el número de columnas según el ancho de pantalla, mientras que cada tarjeta (`.animal-article`) combina fondo blanco, bordes redondeados, sombras y transiciones suaves que producen un efecto de elevación al pasar el cursor. Las imágenes (`.animal-article__img`) se presentan con bordes redondeados y sombras, y los nombres y datos (`.animal-article__nombre`, `.animal-article__data`) mantienen coherencia tipográfica y contraste adecuado para facilitar la lectura.
+
+> En conjunto, este CSS asegura que la página de adopciones sea **accesible, atractiva y funcional**, mostrando a los animales de forma destacada y permitiendo al visitante interactuar y explorar la información de manera intuitiva.
+
 ---
 
-#### 5. Perro.html y Gato.html
+#### 5. Gato.html
 
 Esta página está dedicada a mostrar la **información individual de un animal en adopción** (aunque la estructura es la misma para cada ficha). El contenido se divide en tres secciones principales:
 
@@ -198,6 +238,13 @@ Esta página está dedicada a mostrar la **información individual de un animal 
 El uso del `<main>` se debe a que contiene el contenido principal y único de la página, centrado exclusivamente en un animal concreto. Las etiquetas `<section>` se emplean para dividir el contenido en partes temáticas: presentación, descripción e información de contacto. Los encabezados `<h2>` establecen una jerarquía visual coherente, marcando los títulos principales de cada bloque. Las etiquetas `<p>` permiten desarrollar la narrativa descriptiva del animal y ofrecer información complementaria de forma clara. La lista `<ul>` organiza los datos más importantes (nombre, sexo, estado sanitario) de manera estructurada y fácil de leer, mientras que cada `<li>` individualiza cada punto. Las imágenes `<img>` aportan contexto visual, reforzando la conexión emocional con el visitante, y el atributo `alt` asegura la accesibilidad para todos los usuarios. Finalmente, la etiqueta `<a>` funciona como un llamado a la acción, enlazando al formulario de adopción y promoviendo la participación del usuario de manera sencilla e intuitiva.
 
 > Este bloque `<main>` tiene como finalidad presentar de forma clara y accesible toda la información relevante sobre un animal específico, incentivando la adopción responsable y brindando datos de utilidad al usuario.
+
+Respecto al CSS, la página de ficha individual se diseña para **resaltar al animal y organizar la información de manera clara y atractiva**. El contenedor principal (`.ficha-animal`) centra el contenido y limita el ancho para mantener una lectura cómoda. El bloque de contenido (`.ficha-animal__contenido`) utiliza **flexbox** con `flex-wrap` para adaptarse a distintos tamaños de pantalla, separando la imagen del animal y la información textual con un espacio adecuado (`gap`).
+
+La imagen (`.ficha-animal__imagen`) se muestra con bordes redondeados, sombra y un efecto hover que aumenta ligeramente su tamaño, dando sensación de dinamismo. La sección de información (`.ficha-animal__info`) combina fondo blanco, bordes redondeados y sombras suaves, diferenciándose visualmente del fondo y destacando los datos importantes. Los nombres y títulos (`.ficha-animal__nombre`, `.ficha-animal__titulo`) utilizan colores contrastantes y jerarquía tipográfica clara, mientras que las listas de información (`.ficha-animal__lista`) incluyen iconos de huella antes de cada elemento, aportando un toque gráfico y reforzando la temática del refugio.
+
+> En conjunto, este CSS asegura que la ficha individual sea **visual, organizada y accesible**, facilitando que el visitante identifique rápidamente los datos del animal y se sienta motivado a iniciar el proceso de adopción.
+
 ---
 #### 6. Formularios.html
 
@@ -229,6 +276,17 @@ Las imágenes `<img>` refuerzan el mensaje emocional y visual de cada tipo de ay
 
 > En conjunto, esta estructura promueve la interacción activa del visitante con el refugio, combinando claridad informativa, accesibilidad y un diseño orientado al compromiso solidario.
 
+El CSS de `Formularios.html` está diseñado para **presentar de forma clara, atractiva y accesible los diferentes modos de colaboración con el refugio**.
+
+El contenedor principal (`.formularios_main`) centra y limita el ancho del contenido, con suficiente padding vertical para separar visualmente las secciones. La **introducción motivacional** (`.formularios_intro` y `.formularios_texto`) utiliza texto centrado y un tamaño de fuente legible, destacando la invitación a participar y facilitando la lectura del mensaje persuasivo.
+
+La **lista de formularios** (`.formularios_lista`) se organiza mediante un grid flexible que se adapta automáticamente al tamaño de la pantalla, mostrando tarjetas (`.formulario_article`) de cada tipo de participación: adopción, voluntariado y donaciones. Cada tarjeta combina **fondo blanco, bordes redondeados, sombras suaves y efectos hover** que elevan ligeramente la tarjeta al pasar el cursor, lo que aporta dinamismo y refuerza la interactividad visual.
+
+Los **títulos** (`.titulo2`) y los **textos descriptivos** (`.form_card_text`) emplean colores y tamaños coherentes con la identidad del sitio, asegurando jerarquía y legibilidad. Las **imágenes** (`.imagenes_formulario`) complementan visualmente la acción promovida, con bordes redondeados, sombras y un efecto de ligera ampliación al pasar el cursor, reforzando la estética amigable y cercana del refugio.
+
+El **responsive** garantiza que en pantallas pequeñas el contenedor principal se adapte al 95% del ancho, manteniendo la coherencia y legibilidad del diseño sin que se rompa la estructura del grid de formularios.
+
+> En conjunto, este CSS logra que la página de formularios sea **visual, intuitiva y motivadora**, facilitando al usuario identificar rápidamente las oportunidades de participación, reforzando la interacción y promoviendo un compromiso activo con la causa del refugio.
 ---
 
 #### 7. Contacto_adoptar.html, contacto_voluntario.html y contacto_donar.html
@@ -248,6 +306,19 @@ Estas páginas contienen los **formularios principales** para que los usuarios p
 El uso de `<main>` concentra todo el **contenido interactivo esencial** de la página, ya que los formularios representan la principal vía de colaboración con el refugio. Cada formulario `<form>` se organiza de manera lógica y clara: los `<fieldset>` agrupan secciones de información relacionadas, los `<legend>` indican el tema de cada grupo, y las etiquetas `<label>` describen cada campo de entrada para mejorar la usabilidad y accesibilidad. Los campos `<input>` y `<select>` permiten la entrada de texto, selección de opciones, números, fechas y aceptación de condiciones. Los botones `<button>` proporcionan un punto final de envío, garantizando que los datos se transmitan correctamente. En conjunto, esta estructura permite a los usuarios **adoptar, acoger o donar** de forma segura, ordenada y comprensible, optimizando la interacción con la web y promoviendo la participación activa en la causa del refugio.
 
 > Todos los formularios `<form>` utilizan el atributo `method="POST"` para enviar los datos de manera segura y `action=""` para definir la ruta de procesamiento. Los `<fieldset>` y `<legend>` organizan el contenido de manera semántica, mientras que las etiquetas `<label>` se asocian a cada `<input>` o `<select>` para mejorar la accesibilidad. Los checkboxes `<input type="checkbox">` permiten marcar opciones de aceptación o compromisos, y los campos obligatorios se definen con `required` para asegurar que la información esencial se complete antes del envío.
+Perfecto, siguiendo la línea de explicación de las páginas anteriores, aquí tienes la descripción detallada para **Contacto_adoptar.html, Contacto_voluntario.html y Contacto_donar.html** y su CSS:
+
+El CSS aplicado proporciona una **experiencia visual coherente, accesible y adaptable**:
+
+* Los **formularios** (`form`) tienen un fondo blanco, bordes redondeados, padding interno y sombra suave, creando un contenedor limpio y fácil de leer.
+* Los **fieldset y legend** se destacan con un borde de color primario, redondeo y padding interno, separando visualmente cada bloque de información.
+* Las **etiquetas verticales y horizontales** permiten organizar los campos y checkboxes de manera clara y consistente, usando `.preguntas_personales`, `.div_checkbox_animal`, etc.
+* Los **inputs y selects** tienen padding, borde redondeado y cambio de color al enfocar (`focus`), reforzando la interactividad y visibilidad del campo activo.
+* El **botón de envío** resalta con color secundario, borde redondeado y efectos hover que invitan a la acción.
+* El **responsive** asegura que el formulario se adapte correctamente a pantallas pequeñas, ajustando padding y ancho del contenedor, sin comprometer la legibilidad.
+
+> En conjunto, esta estructura y estilos CSS permiten que los usuarios **interactúen con los formularios de forma clara, intuitiva y segura**, promoviendo la adopción responsable, la acogida temporal y las donaciones, garantizando una experiencia visual agradable y un flujo de información comprensible.
+
 ---
 
 #### 8. Blog.html
@@ -269,3 +340,69 @@ Esta página contiene el **blog del refugio**, donde se publican noticias, resca
 El uso del `<main>` concentra el **contenido principal del blog**, mientras que las secciones `<section>` agrupan temáticamente los diferentes tipos de publicaciones: eventos, rescates y casos urgentes. Los `<article>` estructuran cada noticia o evento como una unidad independiente con su propio contenido, facilitando la lectura y la indexación por buscadores. Los encabezados `<h2>`, `<h3>` y `<h4>` jerarquizan la información, marcando títulos de sección, subsecciones y nombres de eventos o rescates. Las imágenes `<img>` aportan contexto visual y los atributos `alt` garantizan accesibilidad. La etiqueta `<time>` indica la fecha de publicación o del evento, permitiendo a los usuarios y sistemas interpretar correctamente la temporalidad. Por último, los párrafos `<p>` presentan de manera clara la descripción de cada actividad, rescate o caso urgente, logrando que la información sea comprensible y directa para los visitantes.
 
 > Este `<main>` organiza el contenido del blog de forma clara, semántica y accesible, permitiendo a los usuarios identificar rápidamente eventos, rescates y situaciones urgentes que necesitan atención.
+Perfecto, aquí tienes un resumen y explicación completa de la estructura y estilos del **Blog.html** y su CSS:
+
+En cuanto al css de esta pagina:
+
+* **Estilo de títulos:**
+
+    * `h2::after` añade una línea decorativa debajo del título principal.
+    * `h3` y `h4` tienen colores diferenciados según la jerarquía (`var(--color-primario)`).
+
+* **Artículos del blog:**
+
+    * `.blog-article` utiliza fondo blanco, borde redondeado, sombra suave y transición en `hover` para elevar el artículo.
+    * `.blog-article-content` gestiona el padding interno.
+    * Imágenes ajustadas con `object-fit: cover` y borde inferior de color secundario.
+
+* **Fechas:**
+  `.blog-date` muestra la fecha en color secundario, con fuente más pequeña y negrita.
+
+* **Sección de noticias adicionales:**
+  `.blog-noticias` utiliza un fondo suave, padding y borde redondeado para separar visualmente el contenido.
+
+* **Responsive:**
+
+    * Para pantallas menores de 900px, `.blog-article` pasa a disposición vertical.
+    * Imágenes se ajustan a ancho completo y padding interno de contenido se reduce.
+
+> En conjunto, la estructura y estilos CSS hacen que el **blog sea visualmente atractivo, claro y accesible**, destacando noticias, rescates y eventos urgentes, mientras mantiene coherencia con el resto del sitio del refugio.
+
+### 9. Modo Oscuro (Dark Mode)
+
+Este bloque CSS implementa un **modo oscuro** para el sitio web, utilizando la consulta `@media (prefers-color-scheme: dark)`. Esto permite que el diseño se adapte automáticamente si el usuario tiene configurado el tema oscuro en su sistema operativo o navegador.
+
+#### Cómo funciona:
+
+* **Variables CSS adaptadas:**
+  Se redefinen las variables de color para el modo oscuro:
+
+    * `--color-primario`: texto y detalles claros (#ffffff).
+    * `--color-secundario`: acentos cálidos (#ffb47d).
+    * `--color-blanco`: fondo general oscuro (#121212).
+    * `--color-terciario`: botones y hover (#ff8e53).
+    * `--color-cuaternario`: fondo secundario (#1c1c1c).
+    * `--color-oscuro`: color principal de texto (#e0e0e0).
+    * `--color-suave`: fondos de secciones secundarias (#2c2c2c).
+
+* **Cuerpo y tipografía:**
+
+    * `body` recibe un **fondo oscuro** y texto claro (`--color-cuaternario` y `--color-oscuro`).
+    * Encabezados `<h1>`, `<h2>`, `<h3>`, `<h4>` se ajustan a `--color-primario`.
+    * Enlaces y texto dentro de la cabecera y pie se adaptan al contraste necesario para legibilidad.
+
+* **Componentes específicos:**
+
+    * **Cabecera y pie de página:** fondo oscuro y texto claro para mantener contraste y visibilidad.
+    * **Fichas de animales:** fondo de información `.ficha-animal__info` más oscuro y botones `.ficha-animal__boton` con colores de acento, manteniendo efecto hover visible.
+    * **Listas con iconos:** los iconos de huella se resaltan con `--color-secundario`.
+    * **Formularios:** fondo de formulario oscuro (`--color-suave`), campos de entrada claros (`--color-blanco`) y bordes visibles; botones de envío con colores de acento consistentes.
+    * **Blog y secciones de texto:** `.textoblog` y `.blog-article-content` adaptan su color para que el texto sea legible sobre fondos oscuros; listas en `.sobre-nosotros` también se ajustan.
+
+#### Beneficios:
+
+* **Accesibilidad:** Facilita la lectura en entornos con poca luz y reduce la fatiga visual.
+* **Experiencia de usuario:** Se adapta automáticamente a la preferencia del usuario, ofreciendo un diseño coherente y atractivo.
+* **Consistencia:** Mantiene los mismos estilos, transiciones y jerarquía visual del sitio original, pero con colores adecuados para el modo oscuro.
+
+> En resumen, este apartado garantiza que toda la web sea **compatible con el modo oscuro**, asegurando legibilidad, contraste y coherencia estética sin modificar la estructura HTML ni la funcionalidad de los formularios, tarjetas, blog o fichas de animales.
