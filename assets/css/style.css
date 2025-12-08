@@ -411,12 +411,11 @@ nav{
 .servicio-table tbody tr:nth-child(even) td {
     background: var(--color-suave);
 }
-
 /* ======================================================
-      NUEVO CSS PARA ADOPCIONES (SOLUCIÓN AL PROBLEMA)
+      ESTILOS GENERALES PARA TODOS LOS FORMULARIOS
 ======================================================= */
 
-/* Contenedor imagen + tarjetas */
+/* Contenedor principal de imágenes + tarjetas (solo adopciones) */
 .adopciones-grid {
     display: flex;
     gap: 30px;
@@ -425,7 +424,6 @@ nav{
     flex-wrap: wrap;
 }
 
-/* Imagen ajustada */
 .adopciones-grid .servicio-img {
     width: 40%;
     max-width: 380px;
@@ -433,7 +431,6 @@ nav{
     object-fit: contain;
 }
 
-/* Columna de tarjetas */
 .adopciones-columna {
     display: flex;
     flex-direction: column;
@@ -442,104 +439,21 @@ nav{
     min-width: 350px;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .adopciones-grid {
         flex-direction: column;
         align-items: center;
     }
-
     .adopciones-grid .servicio-img {
         width: 100%;
         max-width: 500px;
     }
 }
 
-/* Contenedor principal */
-.preguntas_personales label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-/* ---- PREGUNTAS ESCRITAS (verticales) ---- */
-.div_preguntas_animal label,
-.div_preguntas_voluntariado label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-/* ---- CHECKBOXES HORIZONTALES ---- */
-.div_checkbox_animal label,
-.div_checkbox_voluntariado label {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    font-size: 1rem;
-    align-items: center;
-}
-
-/* Inputs generales */
-form[name="Adopción"] input[type="text"],
-form[name="Adopción"] input[type="email"],
-form[name="Adopción"] select,
-form[name="Voluntariado"] input[type="text"],
-form[name="Voluntariado"] input[type="email"],
-form[name="Voluntariado"] input[type="number"],
-form[name="Voluntariado"] select {
-    padding: 10px 12px;
-    border: 1px solid var(--color-primario);
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-top: 5px;
-    transition: border 0.3s;
-}
-
-/* Estilo de focus */
-form[name="Adopción"] input:focus,
-form[name="Adopción"] select:focus,
-form[name="Voluntariado"] input:focus,
-form[name="Voluntariado"] select:focus {
-    outline: none;
-    border-color: var(--color-secundario);
-}
-
-/* Checkboxes */
-form[name="Adopción"] input[type="checkbox"],
-form[name="Voluntariado"] input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
-}
-
-/* Checkbox alineado */
-form[name="Adopción"] label input[type="checkbox"],
-form[name="Voluntariado"] label input[type="checkbox"] {
-    margin-top: 0;
-}
-
-/* Fieldset y legend */
-form[name="Adopción"] fieldset,
-form[name="Voluntariado"] fieldset {
-    border: 2px solid var(--color-primario);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
-}
-
-form[name="Adopción"] legend,
-form[name="Voluntariado"] legend {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--color-primario);
-    padding: 0 10px;
-}
-
-/* Contenedor formulario */
-form[name="Adopción"],
-form[name="Voluntariado"] {
+/* --------------------------
+   FORMULARIOS: CONTENEDOR
+--------------------------- */
+form {
     max-width: 900px;
     margin: 50px auto;
     padding: 30px;
@@ -550,226 +464,66 @@ form[name="Voluntariado"] {
     color: var(--color-oscuro);
 }
 
-/* Botón */
-form[name="Adopción"] button,
-form[name="Voluntariado"] button {
-    display: block;
-    margin: 20px auto 0;
-    padding: 12px 25px;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-form[name="Adopción"] button:hover,
-form[name="Voluntariado"] button:hover {
-    background-color: var(--color-blanco);
-    color: var(--color-secundario);
-    border: 2px solid var(--color-secundario);
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    form[name="Adopción"],
-    form[name="Voluntariado"] {
-        padding: 20px;
-        margin: 30px 15px;
-    }
-
-    form[name="Adopción"] fieldset,
-    form[name="Voluntariado"] fieldset {
-        padding: 15px;
-    }
-}
-
-/* ===============================
-   FORMULARIO DE Donacion
-=============================== */
-
-/* Contenedor principal */
-.preguntas_personales label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-/* Si hubiese checkboxes horizontales */
-.div_checkbox_animal label{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-/* Preguntas adicionales (columnas) */
-.div_preguntas_animal label{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    font-size: 1rem;
-}
-
-form[name="Adopción"] {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: var(--color-blanco);
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    font-family: Arial, sans-serif;
-    color: var(--color-oscuro);
-}
-
-/* Fieldset y leyenda */
-form[name="Adopción"] fieldset {
+/* --------------------------
+   FIELDSET Y LEGEND
+--------------------------- */
+form fieldset {
     border: 2px solid var(--color-primario);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 25px;
 }
 
-form[name="Adopción"] legend {
+form legend {
     font-size: 1.6rem;
     font-weight: bold;
     color: var(--color-primario);
     padding: 0 10px;
 }
 
-/* Inputs y selects */
-form[name="Adopción"] input[type="text"],
-form[name="Adopción"] input[type="email"],
-form[name="Adopción"] input[type="number"],
-form[name="Adopción"] input[type="month"],
-form[name="Adopción"] select {
-    padding: 10px 12px;
-    border: 1px solid var(--color-primario);
-    border-radius: 6px;
-    font-size: 1rem;
-    margin-top: 5px;
-    transition: border 0.3s;
-}
-
-form[name="Adopción"] input[type="text"]:focus,
-form[name="Adopción"] input[type="email"]:focus,
-form[name="Adopción"] input[type="number"]:focus,
-form[name="Adopción"] input[type="month"]:focus,
-form[name="Adopción"] select:focus {
-    outline: none;
-    border-color: var(--color-secundario);
-}
-
-/* Checkboxes */
-form[name="Adopción"] input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
-}
-
-form[name="Adopción"] label input[type="checkbox"] {
-    margin-top: 0;
-}
-
-/* Botón de envío */
-form[name="Adopción"] button[type="submit"] {
-    display: block;
-    margin: 20px auto 0;
-    padding: 12px 25px;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-form[name="Adopción"] button[type="submit"]:hover {
-    background-color: var(--color-blanco);
-    color: var(--color-secundario);
-    border: 2px solid var(--color-secundario);
-}
-
-/* Select con estilo uniforme */
-form[name="Adopción"] select {
-    appearance: none;
-    background-color: var(--color-blanco);
-    cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    form[name="Adopción"] {
-        padding: 20px;
-        margin: 30px 15px;
-    }
-
-    form[name="Adopción"] fieldset {
-        padding: 15px;
-    }
-}
-/* ===============================
-   FORMULARIO DE ACOGIDA
-=============================== */
-/* ===============================
-   FORMULARIO DE ACOGIDA
-=============================== */
-
-/* Contenedores de labels */
+/* --------------------------
+   LABELS Y PREGUNTAS VERTICALES
+--------------------------- */
 .preguntas_personales label,
-.div_preguntas_acogida label {
+.div_preguntas_animal label,
+.div_preguntas_voluntariado label,
+.div_preguntas_donacion label {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     font-size: 1rem;
 }
 
-/* Para checkboxes alineados en horizontal */
-.div_checkbox_acogida label {
+/* --------------------------
+   CHECKBOXES HORIZONTALES
+--------------------------- */
+.div_checkbox_animal label,
+.div_checkbox_voluntariado label,
+.div_checkbox_donacion label {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-bottom: 15px;
     font-size: 1rem;
-    align-items: center;
 }
 
-/* Estilo principal del formulario */
-form[name="Acogida"] {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: var(--color-blanco);
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    font-family: Arial, sans-serif;
-    color: var(--color-oscuro);
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
 }
 
-/* Fieldset y leyenda */
-form[name="Acogida"] fieldset {
-    border: 2px solid var(--color-primario);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
+label input[type="checkbox"] {
+    margin-top: 0;
 }
 
-form[name="Acogida"] legend {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--color-primario);
-    padding: 0 10px;
-}
-
-/* Inputs y selects */
-form[name="Acogida"] input[type="text"],
-form[name="Acogida"] input[type="email"],
-form[name="Acogida"] input[type="number"],
-form[name="Acogida"] select {
+/* --------------------------
+   INPUTS Y SELECTS
+--------------------------- */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="month"],
+select {
     padding: 10px 12px;
     border: 1px solid var(--color-primario);
     border-radius: 6px;
@@ -778,22 +532,22 @@ form[name="Acogida"] select {
     transition: border 0.3s;
 }
 
-form[name="Acogida"] input[type="text"]:focus,
-form[name="Acogida"] input[type="email"]:focus,
-form[name="Acogida"] input[type="number"]:focus,
-form[name="Acogida"] select:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: var(--color-secundario);
 }
 
-/* Checkboxes */
-form[name="Acogida"] input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
+select {
+    appearance: none;
+    background-color: var(--color-blanco);
+    cursor: pointer;
 }
 
-/* Botón */
-form[name="Acogida"] button[type="submit"] {
+/* --------------------------
+   BOTÓN DE ENVÍO
+--------------------------- */
+button[type="submit"] {
     display: block;
     margin: 20px auto 0;
     padding: 12px 25px;
@@ -807,27 +561,22 @@ form[name="Acogida"] button[type="submit"] {
     transition: all 0.3s;
 }
 
-form[name="Acogida"] button[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: var(--color-blanco);
     color: var(--color-secundario);
     border: 2px solid var(--color-secundario);
 }
 
-/* Select uniforme */
-form[name="Acogida"] select {
-    appearance: none;
-    background-color: var(--color-blanco);
-    cursor: pointer;
-}
-
-/* Responsive */
+/* --------------------------
+   RESPONSIVE
+--------------------------- */
 @media (max-width: 600px) {
-    form[name="Acogida"] {
+    form {
         padding: 20px;
         margin: 30px 15px;
     }
-
-    form[name="Acogida"] fieldset {
+    form fieldset {
         padding: 15px;
     }
 }
+
