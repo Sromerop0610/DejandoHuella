@@ -915,10 +915,6 @@ button[type="submit"]:hover {
     font-weight: bold;
 }
 
-.decoracion--gatos {
-    background: url('assets/icons/cara_gato.png') center/cover no-repeat;
-}
-
 
 /* -------- CONTENEDOR DE TARJETAS -------- */
 .grupo-contenedor {
@@ -967,4 +963,204 @@ button[type="submit"]:hover {
 .animal-article__data {
     font-size: 1.1rem;
     color: var(--color-oscuro);
+}
+/* ==========================================================
+   SOBRE NOSOTROS – DISEÑO COMPLETO Y ELABORADO
+========================================================== */
+
+/* -------- BANNER SUPERIOR -------- */
+.banner-sobre {
+    width: 100%;
+    background: var(--color-secundario);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--color-blanco);
+    margin-bottom: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.titulo-banner-sobre {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-banner-sobre {
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+
+/* -------- CAJAS GENERALES -------- */
+.caja-sobre, .impacto-sobre {
+    width: 85%;
+    max-width: 1000px;
+    background-color: var(--color-blanco);
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.titulo-caja-sobre {
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.caja-sobre ul, .impacto-sobre ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.imagen-caja-sobre {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 18px;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+
+/* -------- HISTORIA - GRID -------- */
+.historia-sobre {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.titulo-seccion-sobre {
+    font-size: 2.2rem;
+    color: var(--color-secundario);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.historia-grid {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    align-items: start;
+}
+
+
+.historia-articulo {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+    text-align: center;
+}
+
+.historia-articulo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.historia-articulo h4 {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+.historia-articulo img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+/* -------- POLITICAS -------- */
+.politicas-sobre {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto 80px;
+}
+
+.politicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.politica-articulo {
+    background: var(--color-blanco);
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.politica-articulo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.politica-articulo h4 {
+    font-size: 1.6rem;
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+}
+/* ===== LISTAS BONITAS - SOBRE NOSOTROS ===== */
+
+.caja-sobre ul li,
+.impacto-sobre ul li,
+.politica-articulo ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #444;
+    transition: transform .2s ease, color .2s ease;
+}
+
+.caja-sobre ul li::before,
+.impacto-sobre ul li::before,
+.politica-articulo ul li::before {
+    content: "🐾"; /* Iconito de huella */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    transition: transform .25s ease;
+}
+
+.caja-sobre ul li:hover,
+.impacto-sobre ul li:hover,
+.politica-articulo ul li:hover {
+    color: var(--color-primario);
+    transform: translateX(4px);
+}
+
+.caja-sobre ul li:hover::before,
+.impacto-sobre ul li:hover::before,
+.politica-articulo ul li:hover::before {
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 700px) {
+    .titulo-banner-sobre {
+        font-size: 2.1rem;
+    }
+
+    .subtitulo-banner-sobre {
+        font-size: 1.2rem;
+    }
+
+    .caja-sobre, .impacto-sobre {
+        padding: 25px;
+    }
+
+    .historia-articulo {
+        padding: 20px;
+    }
 }
