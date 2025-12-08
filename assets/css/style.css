@@ -700,7 +700,7 @@ button[type="submit"]:hover {
 }
 
 /* ===============================
-      BLOG - ESTILO ESPECÍFICO
+              BLOG
 =============================== */
 
 .blog h2::after{
@@ -771,7 +771,9 @@ button[type="submit"]:hover {
 }
 
 
-/* Responsive */
+/*
+         RESPONSIVE
+--------------------------- */
 @media (max-width: 900px) {
     .blog-article {
         flex-direction: column;
@@ -808,14 +810,18 @@ button[type="submit"]:hover {
     color: var(--color-oscuro);
 }
 
-/* Lista de tarjetas */
+/*
+      LISTA DE TARJETAS
+--------------------------- */
 .formularios_lista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 40px;
 }
 
-/* Tarjetas individuales */
+/*
+        INDIVIDUALES
+--------------------------- */
 .formulario_article {
     background: var(--color-blanco);
     padding: 20px;
@@ -842,7 +848,9 @@ button[type="submit"]:hover {
 }
 
 
-/* Imágenes */
+/*
+          IMAGENES
+--------------------------- */
 .imagenes_formulario {
     width: 100%;
     border-radius: 12px;
@@ -855,7 +863,9 @@ button[type="submit"]:hover {
     transform: scale(1.03);
 }
 
-/* Responsive */
+/*
+         RESPONSIVE
+--------------------------- */
 @media (max-width: 600px) {
     .formularios_main {
         width: 95%;
@@ -865,7 +875,9 @@ button[type="submit"]:hover {
    LISTA DE ANIMALES - DISEÑO ELABORADO
 ========================================= */
 
-/* -------- INTRO -------- */
+/*
+           INTRO
+--------------------------- */
 .lista-animales__intro {
     width: 90%;
     max-width: 1100px;
@@ -892,7 +904,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- CABECERAS DE CADA GRUPO -------- */
+/*
+         CABECERAS
+--------------------------- */
 .grupo-header {
     background: var(--color-primario);
     color: var(--color-blanco);
@@ -916,7 +930,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- CONTENEDOR DE TARJETAS -------- */
+/*
+        CONTENEDOR
+--------------------------- */
 .grupo-contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -927,7 +943,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- TARJETAS ------- */
+/*
+         TARJETAS
+--------------------------- */
 .animal-article {
     background-color: var(--color-blanco);
     padding: 25px;
@@ -965,10 +983,12 @@ button[type="submit"]:hover {
     color: var(--color-oscuro);
 }
 /* ==========================================================
-   SOBRE NOSOTROS – DISEÑO COMPLETO Y ELABORADO
+                     SOBRE NOSOTROS
 ========================================================== */
 
-/* -------- BANNER SUPERIOR -------- */
+/*
+          BANNER
+--------------------------- */
 .banner-sobre {
     width: 100%;
     background: var(--color-secundario);
@@ -992,7 +1012,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- CAJAS GENERALES -------- */
+/*
+       CAJAS GENERALES
+--------------------------- */
 .caja-sobre, .impacto-sobre {
     width: 85%;
     max-width: 1000px;
@@ -1026,7 +1048,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- HISTORIA - GRID -------- */
+/*
+        HISTORIA
+--------------------------- */
 .historia-sobre {
     width: 90%;
     max-width: 1100px;
@@ -1076,7 +1100,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- POLITICAS -------- */
+/*
+          POLÍTICAS
+--------------------------- */
 .politicas-sobre {
     width: 90%;
     max-width: 1100px;
@@ -1107,7 +1133,9 @@ button[type="submit"]:hover {
     color: var(--color-secundario);
     margin-bottom: 15px;
 }
-/* ===== LISTAS BONITAS - SOBRE NOSOTROS ===== */
+/*
+           LISTAS
+--------------------------- */
 
 .caja-sobre ul li,
 .impacto-sobre ul li,
@@ -1146,7 +1174,9 @@ button[type="submit"]:hover {
 }
 
 
-/* -------- RESPONSIVE -------- */
+/*
+         RESPONSIVE
+--------------------------- */
 @media (max-width: 700px) {
     .titulo-banner-sobre {
         font-size: 2.1rem;
@@ -1164,3 +1194,145 @@ button[type="submit"]:hover {
         padding: 20px;
     }
 }
+/* ==========================================================
+                     SOBRE NOSOTROS
+========================================================== */
+
+/*
+         CONTENEDOR
+--------------------------- */
+.ficha-animal {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto 80px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/*
+         CONTENIDO
+--------------------------- */
+.ficha-animal__contenido {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/*
+            FOTO
+--------------------------- */
+.ficha-animal__imagen-contenedor {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.ficha-animal__imagen {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform .3s ease;
+}
+
+.ficha-animal__imagen:hover {
+    transform: scale(1.03);
+}
+
+/*
+        INFORMACIÓN
+--------------------------- */
+.ficha-animal__info {
+    flex: 1 1 400px;
+    background: var(--color-blanco);
+    padding: 30px 25px;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/*
+       NOMBRE ANIMAL
+--------------------------- */
+.ficha-animal__nombre {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/*
+        SUBTÍTULOS
+--------------------------- */
+.ficha-animal__titulo {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+    margin-bottom: 15px;
+    border-left: 5px solid var(--color-secundario);
+    padding-left: 12px;
+}
+
+/*
+     LISTA CON ICONOS
+--------------------------- */
+.ficha-animal__lista {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.ficha-animal__lista li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.ficha-animal__lista li::before {
+    content: "🐾";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/*
+       BOTON ADOPCION
+--------------------------- */
+.ficha-animal__accion {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ficha-animal__boton {
+    display: inline-block;
+    background: var(--color-secundario);
+    color: var(--color-blanco);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.28);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.ficha-animal__boton:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.32);
+}
+
+/*
+          RESPONSIVE
+--------------------------- */
+@media (max-width: 900px) {
+    .ficha-animal__contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ficha-animal__info {
+        width: 100%;
+    }
+}
+
