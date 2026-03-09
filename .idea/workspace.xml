@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624b9f2-dff3-422a-9ed8-610f7ae62bbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formularios/añadir-animal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/extra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formularios/añadir-animal.html" beforeDir="false" afterPath="$PROJECT_DIR$/formularios/añadir-animal.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +145,7 @@
       <workItem from="1772457883376" duration="7000" />
       <workItem from="1772539684503" duration="1618000" />
       <workItem from="1772801454903" duration="438000" />
-      <workItem from="1773060003300" duration="970000" />
+      <workItem from="1773060003300" duration="1662000" />
     </task>
     <servers />
   </component>

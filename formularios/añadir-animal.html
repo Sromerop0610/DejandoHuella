@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Refugio de animales donde rescatamos, cuidamos y damos en adopción a perros y gatos.">
     <meta name="author" content="Sara Romero">
-    <script src="../assets/js/index.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
     <title> Añadir | Refugio Dejando Huella</title>
 </head>
-</head>
-
 <body>
 <header class="cabecera">
     <a class="cabecera__logo" href="../index.html">
@@ -31,16 +28,18 @@
 </header>
 
 <main>
-    <form name="AñadirAnimal" method="POST" action="">
+    <form id="AnadirAnimal" method="POST" action="">
         <fieldset>
             <legend>Datos del animal</legend>
 
             <label>Nombre del animal:
                 <input type="text" name="nombre_animal" placeholder="Nombre del animal *" required>
+                <span class="error"></span>
             </label>
 
             <label>Edad del animal:
                 <input type="number" name="edad_animal" placeholder="Edad *" required>
+                <span class="error"></span>
             </label>
 
             <p>Sexo:</p>
@@ -66,6 +65,7 @@
 
         <button type="submit">Añadir animal</button>
     </form>
+    <script src="../assets/js/index.js"></script>
 </main>
 
 <footer class="pie">
