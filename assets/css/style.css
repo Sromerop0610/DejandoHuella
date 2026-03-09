@@ -8,7 +8,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
     color: var(--color-secundario);
 }
@@ -219,7 +219,7 @@ ul.menu{
     background: var(--color-blanco);
     padding: 60px 80px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin: 40px auto;
     width: 90%;
     flex-wrap: wrap;
@@ -263,7 +263,6 @@ ul.menu{
     width: 100%;
     max-width: 280px;
 }
-
 /*
      PLAN ACTUACIÓN
 ----------------------- */
@@ -1478,4 +1477,14 @@ button[type="submit"]:hover {
     .sobre-nosotros ul{
         color: var(--color-primario);
     }
+}
+
+
+.ejemplo {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    margin: 1rem;
+    color: var(--color-negro);
+    text-align: center;
+    width: 100%;
 }
