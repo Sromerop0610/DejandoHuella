@@ -1,4 +1,4 @@
-let animales = [];
+let animales = JSON.parse(localStorage.getItem("animales")) || [];
 
 const formulario = document.getElementById("AnadirAnimal");
 
@@ -33,8 +33,10 @@ formulario.addEventListener("submit", function(event){
         formulario.edad_animal.classList.add("valid-input");
     }
 
-    if(!valid) return; // si hay algún error, no seguimos
+    // Control de errores
+    if(!valid) return;
 
+    // Guardar animal
     const animal = {
         nombre: nombre,
         edad: edad,
@@ -44,5 +46,40 @@ formulario.addEventListener("submit", function(event){
 
     animales.push(animal);
 
+    localStorage.setItem("animales", JSON.stringify(animales));
+
     console.log(JSON.stringify(animales));
+});
+
+
+// Mostrar los animales guardados
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const contenedor = document.getElementById("animales-dinamicos");
+
+    if(!contenedor) return;
+
+    const animales = JSON.parse(localStorage.getItem("animales")) || [];
+
+    animales.forEach(animal => {
+
+        const article = document.createElement("article");
+        article.classList.add("animal-article");
+
+        article.innerHTML = `
+            <figure>
+                <img class="animal-article__img" src="assets/images/sin-imagen.jpg" alt="Animal sin foto">
+                <figcaption>${animal.nombre}</figcaption>
+            </figure>
+
+            <h4 class="animal-article__nombre">${animal.nombre}</h4>
+            <p class="animal-article__data">Sexo: ${animal.sexo}</p>
+            <p class="animal-article__data">Edad: ${animal.edad}</p>
+        `;
+
+        contenedor.appendChild(article);
+
+    });
+
 });
