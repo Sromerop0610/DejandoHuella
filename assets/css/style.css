@@ -50,6 +50,12 @@ body p{
 body{
     background-color: var(--color-cuaternario);
 }
+.lista-animales__anadir {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
 
 /* ===============================
             VARIABLES
@@ -710,7 +716,32 @@ button[type="submit"]:hover {
     color: var(--color-secundario);
     border: 2px solid var(--color-secundario);
 }
+form#AnadirAnimal fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* espacio entre cada input o grupo */
+}
 
+form#AnadirAnimal label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* pequeño espacio entre el texto del label y el input */
+}
+
+form#AnadirAnimal p {
+    margin: 0.5rem 0 0.2rem 0; /* para separar el título "Sexo:" o similar */
+}
+
+form#AnadirAnimal input[type="radio"],
+form#AnadirAnimal select {
+    width: auto; /* para que no se estiren si algún estilo global los afectaba */
+}
+
+form#AnadirAnimal button,
+form#AnadirAnimal .boton {
+    margin-top: 1rem; /* separar los botones del último input */
+    align-self: flex-start; /* opcional: que no se estiren al 100% */
+}
 /*
    RESPONSIVE
 --------------------------- */
@@ -1391,111 +1422,55 @@ button[type="submit"]:hover {
 }
 
 /* ===============================
-          MODO OSCURO
+      MODO OSCURO CON CLASE
 =============================== */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-primario: #ffffff;       /* texto y detalles claros */
-        --color-secundario: #ffb47d;     /* acentos cálidos */
-        --color-blanco: #121212;         /* fondo general oscuro */
-        --color-terciario: #ff8e53;      /* botones / hover */
-        --color-cuaternario: #1c1c1c;    /* fondo secundario */
-        --color-oscuro: #e0e0e0;         /* texto principal */
-        --color-suave: #2c2c2c;          /* fondos de secciones secundarias */
-    }
-
-    body {
-        background-color: var(--color-cuaternario);
-        color: var(--color-oscuro);
-    }
-
-    .cabecera {
-        background-color: var(--color-blanco);
-        color: var(--color-primario);
-    }
-
-    .cabecera a {
-        color: var(--color-primario);
-    }
-
-    h1, h2, h3, h4 {
-        color: var(--color-primario);
-    }
-    .pie {
-        background-color: var(--color-blanco);
-        color: var(--color-primario);
-    }
-
-    .pie a {
-        color: var(--color-secundario);
-    }
-    .pie h2{
-        color: var(--color-primario);
-    }
-
-    .ficha-animal__info {
-        background-color: var(--color-suave);
-        color: var(--color-oscuro);
-    }
-
-    .ficha-animal__boton {
-        background: var(--color-terciario);
-        color: var(--color-blanco);
-    }
-
-    .ficha-animal__boton:hover {
-        background: var(--color-blanco);
-        color: var(--color-terciario);
-        border: 2px dotted var(--color-terciario);
-    }
-
-    /* Para listas con iconos */
-    .ficha-animal__lista li::before {
-        color: var(--color-secundario);
-    }
-
-    /* Formularios */
-    form {
-        background-color: var(--color-suave);
-        color: var(--color-oscuro);
-    }
-
-    input, select {
-        background-color: var(--color-blanco);
-        color: var(--color-oscuro);
-        border: 1px solid var(--color-primario);
-    }
-
-    button[type="submit"] {
-        background-color: var(--color-terciario);
-        color: var(--color-blanco);
-    }
-
-    button[type="submit"]:hover {
-        background-color: var(--color-blanco);
-        color: var(--color-terciario);
-        border: 2px solid var(--color-terciario);
-    }
-
-    /* Blog */
-    .textoblog {
-        color: var(--color-oscuro);
-    }
-
-    .blog-article-content {
-        color: var(--color-oscuro);
-    }
-    .sobre-nosotros ul{
-        color: var(--color-primario);
-    }
+body.modo-oscuro {
+    --color-primario: #ffffff;
+    --color-secundario: #ffb47d;
+    --color-blanco: #121212;
+    --color-terciario: #ff8e53;
+    --color-cuaternario: #1c1c1c;
+    --color-oscuro: #e0e0e0;
+    --color-suave: #2c2c2c;
 }
 
+body.modo-oscuro {
+    background-color: var(--color-cuaternario);
+    color: var(--color-oscuro);
+}
 
-.ejemplo {
+body.modo-oscuro .cabecera {
     background-color: var(--color-blanco);
-    padding: 2rem;
-    margin: 1rem;
-    color: var(--color-negro);
-    text-align: center;
-    width: 100%;
+    color: var(--color-primario);
+}
+
+body.modo-oscuro .cabecera a,
+body.modo-oscuro .pie a {
+    color: var(--color-primario);
+}
+
+body.modo-oscuro .pie {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select,
+body.modo-oscuro form {
+    background-color: var(--color-suave);
+    color: var(--color-oscuro);
+    border: 1px solid var(--color-primario);
+}
+
+body.modo-oscuro button[type="submit"],
+body.modo-oscuro .boton {
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+}
+
+body.modo-oscuro button[type="submit"]:hover,
+body.modo-oscuro .boton:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-terciario);
+    border: 2px solid var(--color-terciario);
 }

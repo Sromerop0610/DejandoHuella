@@ -115,3 +115,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Crear botón de modo oscuro/claro automáticamente
+document.addEventListener("DOMContentLoaded", () => {
+    const cabecera = document.querySelector(".cabecera");
+    if(!cabecera) return;
+
+    const botonModo = document.createElement("button");
+    botonModo.id = "modo-oscuro-toggle";
+    botonModo.classList.add("boton");
+    botonModo.style.marginLeft = "1rem"; // pequeño espacio desde el h1
+    botonModo.style.fontSize = "0.9rem"; // opcional: tamaño del botón
+    botonModo.style.padding = "0.4rem 0.8rem"; // opcional: padding
+
+    // Revisar si hay preferencia guardada
+    const modoGuardado = localStorage.getItem("modo-oscuro");
+    if(modoGuardado === "true"){
+        document.body.classList.add("modo-oscuro");
+        botonModo.textContent = "☀️ Modo Claro";
+    } else {
+        botonModo.textContent = "🌙 Modo Oscuro";
+    }
+
+    // Añadir el botón después del h1
+    const h1 = cabecera.querySelector("h1");
+    h1.insertAdjacentElement("afterend", botonModo);
+
+    // Listener para alternar modos
+    botonModo.addEventListener("click", () => {
+        document.body.classList.toggle("modo-oscuro");
+        const modoActivado = document.body.classList.contains("modo-oscuro");
+        localStorage.setItem("modo-oscuro", modoActivado);
+        botonModo.textContent = modoActivado ? "☀️ Modo Claro" : "🌙 Modo Oscuro";
+    });
+});
