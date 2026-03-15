@@ -73,9 +73,45 @@ document.addEventListener("DOMContentLoaded", () => {
             <h4 class="animal-article__nombre">${animal.nombre}</h4>
             <p class="animal-article__data">Sexo: ${animal.sexo}</p>
             <p class="animal-article__data">Edad: ${animal.edad}</p>
+            
+            <button class="borrar-animal boton">Eliminar</button>
         `;
 
-        contenedor.appendChild(article);
-    });
+        const botonEliminar = article.querySelector(".borrar-animal");
 
+        botonEliminar.addEventListener("click", () => {if(confirm("¿Seguro que quieres eliminar este animal?")){
+
+            let animales = JSON.parse(localStorage.getItem("animales")) || [];
+
+            const animalesFiltrados = animales.filter(
+                a => a.nombre !== animal.nombre
+            );
+
+            localStorage.setItem("animales", JSON.stringify(animalesFiltrados));
+
+            article.remove();
+        }
+
+        });
+
+        contenedor.appendChild(article);
+
+    });
+    // Buscador de animales
+    const inputBusqueda = document.getElementById("busqueda");
+    if(inputBusqueda){
+        inputBusqueda.addEventListener("input", () => {
+            const texto = inputBusqueda.value.toLowerCase().trim();
+            const articulos = document.querySelectorAll("#animales-dinamicos .animal-article");
+
+            articulos.forEach(article => {
+                const nombre = article.querySelector(".animal-article__nombre").textContent.toLowerCase();
+                if(nombre.includes(texto)){
+                    article.style.display = "";
+                } else {
+                    article.style.display = "none";
+                }
+            });
+        });
+    }
 });
