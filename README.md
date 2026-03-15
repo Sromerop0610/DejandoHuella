@@ -267,6 +267,8 @@ El contenido principal se estructura dentro de `<main>` y se organiza en **dos s
 
     3. **Formulario de Donaciones:**
        Motiva a contribuir económicamente con el refugio, mediante un texto inclusivo que resalta la importancia de cualquier aportación. Incluye un enlace a `contacto_donar.html` y una imagen simbólica de unión entre humanos y animales.
+    4.  **Formulario de Creación de animales:**
+       Permite crear tu propia entrada de animal para que posteriormente se muestre en extra.html.
 
 Cada `<article>` utiliza encabezados `<h3>` para jerarquizar los subtítulos, párrafos `<p>` para describir el propósito de cada formulario, enlaces `<a>` para dirigir al visitante a la página correspondiente y una imagen `<img>` que apoya visualmente la acción promovida.
 El uso de `<main>` concentra el **contenido esencial** de la página, mientras que las etiquetas `<section>` dividen la información en bloques temáticos (motivación y formularios).
@@ -370,7 +372,7 @@ En cuanto al css de esta pagina:
 
 ### 9. Modo Oscuro (Dark Mode)
 
-Este bloque CSS implementa un **modo oscuro** para el sitio web, utilizando la consulta `@media (prefers-color-scheme: dark)`. Esto permite que el diseño se adapte automáticamente si el usuario tiene configurado el tema oscuro en su sistema operativo o navegador.
+Este bloque CSS implementa un **modo oscuro** para el sitio web, utilizando la variable modo-oscuro. Esto permite que el diseño se adapte a lo que el usuario seleccione, por medio del botón del modo oscuro. La explicación específica de que hace el botón y su funcionamiento se concreta en el apartado de JavaScript.
 
 #### Cómo funciona:
 
@@ -406,3 +408,58 @@ Este bloque CSS implementa un **modo oscuro** para el sitio web, utilizando la c
 * **Consistencia:** Mantiene los mismos estilos, transiciones y jerarquía visual del sitio original, pero con colores adecuados para el modo oscuro.
 
 > En resumen, este apartado garantiza que toda la web sea **compatible con el modo oscuro**, asegurando legibilidad, contraste y coherencia estética sin modificar la estructura HTML ni la funcionalidad de los formularios, tarjetas, blog o fichas de animales.
+
+#### 10. JavaScript (`script.js`)
+
+El JavaScript del proyecto se encarga de **gestionar la interacción dinámica del usuario**, el almacenamiento de datos y la experiencia personalizada, complementando el contenido estático del HTML y CSS. Se divide en cuatro bloques principales: manejo del formulario de añadir animales, volcado de datos en la página de adopciones (`extra.html`) con funcionalidades de eliminación, buscador por nombre y el botón de modo oscuro.
+
+---
+
+##### Formulario de añadir animal
+
+Este bloque controla la **creación y validación de nuevos animales** para el refugio:
+
+* Primero se capturan los valores del formulario mediante `document.getElementById` y se comprueba que todos los campos obligatorios estén completos.
+* Se realizan validaciones básicas para asegurar que los datos sean coherentes: el nombre no esté vacío, la edad sea un número positivo, el sexo sea correcto, etc.
+* Una vez validados, los datos se estructuran como un **objeto JSON** con propiedades como `nombre`, `edad`, `sexo` e `imagen`.
+* Este objeto se añade a un **array de animales**, que se guarda en `localStorage` usando `JSON.stringify` para mantener los datos aunque se cierre el navegador.
+
+> De esta forma, el formulario permite introducir animales de manera controlada y asegura que la información quede persistente en el navegador, evitando errores de datos o campos vacíos.
+
+---
+
+##### Volcado de animales en `extra.html` y eliminación
+
+En la página de adopciones, el JavaScript se encarga de **mostrar dinámicamente los animales guardados**:
+
+* Se obtiene el array de animales desde `localStorage` y se convierte de nuevo a objeto con `JSON.parse`.
+* Por cada animal, se genera un **elemento `<article>` dinámicamente** que incluye la imagen, el nombre y los datos básicos.
+* Se añaden **botones de eliminación** a cada artículo, que al hacer click eliminan el animal correspondiente del array y vuelven a actualizar el `localStorage`.
+* Finalmente, se vuelve a renderizar la lista de animales en la página, reflejando los cambios en tiempo real.
+
+> Este bloque permite que la página sea **interactiva y dinámica**, mostrando siempre los datos más recientes y ofreciendo al usuario control sobre los registros visibles, sin necesidad de recargar ni modificar el HTML manualmente.
+
+---
+
+##### Buscador por nombre
+
+Para facilitar la navegación dentro de la lista de animales, se implementa un **buscador interactivo**:
+
+* Se captura el texto ingresado por el usuario en un input y se compara con los nombres de los animales usando `String.includes` o `toLowerCase()` para ignorar mayúsculas y minúsculas.
+* La lista de animales se filtra en tiempo real según el término de búsqueda y solo se muestran los artículos que coinciden con el texto ingresado.
+* El filtrado se aplica directamente al array de animales recuperado de `localStorage`, manteniendo la consistencia de los datos y evitando modificar los originales.
+
+> Gracias a este buscador, el usuario puede localizar rápidamente un animal específico, mejorando la **experiencia de usuario** y facilitando la interacción con el contenido dinámico.
+
+---
+
+##### Botón de modo oscuro
+
+Finalmente, se incluye un **toggle de modo oscuro** que permite cambiar la apariencia de toda la página:
+
+* Se detecta la acción del usuario sobre un botón o interruptor y se añade o quita una clase CSS (`dark-mode`) al `body`.
+* Opcionalmente, el estado del modo oscuro se guarda en `localStorage` para que, al volver a cargar la página, se mantenga la preferencia del usuario.
+* El CSS asociado a `.dark-mode` cambia colores de fondo, texto y elementos visuales, manteniendo la accesibilidad y coherencia estética.
+
+> Este bloque ofrece una **experiencia personalizada y moderna**, permitiendo que el sitio se adapte a las preferencias de visualización del usuario sin alterar la estructura HTML ni perder la información dinámica.
+
